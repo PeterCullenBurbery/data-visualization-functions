@@ -1,0 +1,2465 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    104100,       2457]
+NotebookOptionsPosition[    102224,       2415]
+NotebookOutlinePosition[    102661,       2432]
+CellTagsIndexPosition[    102618,       2429]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Word Cloud Images", "Title",
+ CellChangeTimes->{{3.869421009481701*^9, 
+  3.8694210118632693`*^9}},ExpressionUUID->"f0f68a24-a7fe-4dbf-8c80-\
+6945878854b8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"EntityValue", "[", 
+    RowBox[{
+     RowBox[{"CountryData", "[", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Name\>\"", ",", "\"\<Population\>\""}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellLabel->"In[1]:=",ExpressionUUID->"bf4c9e01-8f59-4ac4-8b37-a40a639918ee"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordCloud", "[", "data", "]"}]], "Input",
+ CellLabel->"In[7]:=",ExpressionUUID->"46b492a0-1317-47e5-bb66-58774ce3fbbf"],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    StyleBox["\<\"China\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.20114942528735633`],
+     FontColor->RGBColor[0.368417, 0.506779, 0.709798]], {0, 0}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"India\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.19400068134647583`],
+     FontColor->RGBColor[0.880722, 0.611041, 0.142051]], {-0.5, 64.5}, Center,
+     Automatic], InsetBox[
+    StyleBox["\<\"United States\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06763640024440098],
+     FontColor->RGBColor[0.560181, 0.691569, 0.194885]], {-1.5, -45.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Democratic Republic of the Congo\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.038485821922088895`],
+     FontColor->RGBColor[
+      0.838355547812947, 0.44746667828057946`, 0.0208888695323676]], {-0.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Indonesia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06065561844729745],
+     FontColor->RGBColor[0.922526, 0.385626, 0.209179]], {-0.5, -86.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Bangladesh\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04753970284906284],
+     FontColor->RGBColor[1, 0.75, 0]], {-0.5, 105.5}, Center, Automatic], 
+   InsetBox[
+    StyleBox["\<\"Pakistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.054312875849456044`],
+     FontColor->RGBColor[0.528488, 0.470624, 0.701351]], {-0.5, -108.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"United Kingdom\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035873659406116906`],
+     FontColor->RGBColor[
+      0.9324333565611593, 0.5282889043741062, 0.0921900209050434]], {80.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nigeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05253498179054453],
+     FontColor->RGBColor[0.363898, 0.618501, 0.782349]], {-88.5, -83.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"United Arab Emirates\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888444846376035],
+     FontColor->RGBColor[0.529922539669161, 0.44454647619850335`, 0.85]], {-0.5, 121.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Philippines\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04089844915341642],
+     FontColor->RGBColor[
+      0.9728288904374106, 0.621644452187053, 0.07336199581899142]], {85.5, 87.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Dominican Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02899983992401914],
+     FontColor->RGBColor[
+      0.6102054708420535, 0.39696347534213544`, 0.7619863228948663]], {-0.5, -124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Papua New Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028770759969468204`],
+     FontColor->RGBColor[
+      0.6453361616656581, 0.37647057236169945`, 0.6741595958358548]], {2.5, 133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Brazil\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05330865232892502],
+     FontColor->RGBColor[0.772079, 0.431554, 0.102387]], {107.5, -43.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"South Africa\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03483998352846197],
+     FontColor->RGBColor[0.47401116530937026`, 0.47809330081437784`, 0.85]], {93.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03387112026262631],
+     FontColor->RGBColor[
+      0.16397784358994957`, 0.7038177251280403, 0.6117734123079395]], {-28.5, 84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ethiopia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04154710890215897],
+     FontColor->RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85]], {71.5, -104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Germany\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03778956432880965],
+     FontColor->RGBColor[
+      0.8439466852489265, 0.3467106629502147, 0.3309221912517893]], {-75.5, -105.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Czech Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02898309804884987],
+     FontColor->RGBColor[0.7989994773739094, 0.735166608597101, 0.]], {-91.5, 99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Russia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04527949510892697],
+     FontColor->RGBColor[0.647624, 0.37816, 0.614037]], {-110.5, 37.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Mexico\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.043230572287067226`],
+     FontColor->RGBColor[0.571589, 0.586483, 0.]], {-111.5, -36.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Mozambique\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03145920803356897],
+     FontColor->RGBColor[0.428777913273419, 0.5052332520359486, 0.85]], {88.5, 101.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Saudi Arabia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03188804453421187],
+     FontColor->RGBColor[
+      0.23716678280579248`, 0.645266573755366, 0.699600139366951]], {-93.5, 111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Vietnam\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03942307131374047],
+     FontColor->RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965]], {87.5, 114.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Afghanistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03238389119705276],
+     FontColor->RGBColor[
+      0.8564488486273256, 0.42032672705901153`, 0.06612212156831418]], {88.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burkina Faso\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030211640907940044`],
+     FontColor->RGBColor[0.5019668524892619, 0.46131988850644284`, 0.85]], {-90.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"North Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030799205381796795`],
+     FontColor->RGBColor[
+      0.3103557220216354, 0.5867154223826917, 0.7874268664259625]], {-64.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Madagascar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031029650384504552`],
+     FontColor->RGBColor[
+      0.596786740995709, 0.404791067752503, 0.7955331475107271]], {-91.5, 124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Thailand\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03610431771642929],
+     FontColor->RGBColor[
+      0.28240003484173815`, 0.6090799721266095, 0.7538800418100857]], {-112.5, 52.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Japan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0429345573702874],
+     FontColor->RGBColor[0.915, 0.3325, 0.2125]], {109.5, 41.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"South Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02904151625304125],
+     FontColor->RGBColor[
+      0.8510135028964549, 0.47400900193096995`, 0.018912152606809424`]], {91.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Colombia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03382456629971178],
+     FontColor->RGBColor[
+      0.8613800418100862, 0.48092002787339083`, 0.02824203762907758]], {-113.5, 66.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Myanmar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.034249603996788044`],
+     FontColor->RGBColor[
+      0.9874666782805795, 0.6948333914028977, 0.033839968642435214`]], {-113.5, -51.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uzbekistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031725994867491676`],
+     FontColor->RGBColor[
+      0.9052934053395919, 0.510195603559728, 0.06776406480563275]], {106.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tanzania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03489126448430518],
+     FontColor->RGBColor[
+      0.8857244243136628, 0.3764133635295058, 0.1393110607841571]], {113.5, 65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Netherlands\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029757499979237396`],
+     FontColor->RGBColor[0.7277983389807635, 0.358, 0.5168487092603637]], {3.5, -136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ivory Coast\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03087144796748493],
+     FontColor->RGBColor[
+      0.8607200975568693, 0.34335598048862614`, 0.30296650407188447`]], {-115.5, 81.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Argentina\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.033139197276315584`],
+     FontColor->RGBColor[
+      0.8878600487784333, 0.33792799024431336`, 0.2577332520359445]], {-77.5, 136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kazakhstan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029955361944056885`],
+     FontColor->RGBColor[
+      0.6319174318193065, 0.38429816477207124`, 0.7077064204517338]], {55.5, 144.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cameroon\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03089164458225971],
+     FontColor->RGBColor[0.8493197142977551, 0.7407577460330839, 0.]], {67.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Venezuela\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031119423239909662`],
+     FontColor->RGBColor[
+      0.8342400905885153, 0.4628267270590103, 0.0038160815296638794`]], {117.5, 139.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Turkey\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03785646361925833],
+     FontColor->RGBColor[
+      0.5833680111493557, 0.4126186601628758, 0.8290799721266107]], {-122.5, 18.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guatemala\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029851583576460252`],
+     FontColor->RGBColor[
+      0.9046334610863751, 0.334573307782725, 0.22977756485604156`]], {-122.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zimbabwe\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029483701471273875`],
+     FontColor->RGBColor[
+      0.8335801463353031, 0.3487839707329394, 0.3481997561078282]], {-128.5, -20.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Azerbaijan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02891442902835943],
+     FontColor->RGBColor[0.7042770479220728, 0.358, 0.5530353108891188]], {-130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cambodia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02970737847676373],
+     FontColor->RGBColor[
+      0.845266573755366, 0.437100139366951, 0.03816643438841502]], {130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Egypt\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.040025131425228296`],
+     FontColor->RGBColor[0.736782672705901, 0.358, 0.5030266573755369]], {122.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Morocco\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032140722576498325`],
+     FontColor->RGBColor[
+      0.8168067340273636, 0.3521386531945273, 0.3761554432877274]], {-2.5, 145.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"France\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035558820756049235`],
+     FontColor->RGBColor[
+      0.6753413537738198, 0.3589675436319385, 0.5991466155654507]], {-17.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Australia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030765590272537904`],
+     FontColor->RGBColor[
+      0.9492067688690977, 0.5394711792460651, 0.10728609198218791`]], {-53.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malaysia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031593045058040274`],
+     FontColor->RGBColor[
+      0.9038177251280404, 0.3492734123079395, 0.18454431282010084`]], {129.5, -98.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ukraine\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03296300543592157],
+     FontColor->RGBColor[0.7132613816472081, 0.358, 0.5392132590042952]], {-64.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uganda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03320490361084439],
+     FontColor->RGBColor[0.7678998606330495, 0.7317110956258943, 0.]], {-131.5, -99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Honduras\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888616070921035],
+     FontColor->RGBColor[
+      0.8633598745697435, 0.40996018814538476`, 0.08339968642435877]], {31.5, -153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tajikistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02884193661969707],
+     FontColor->RGBColor[
+      0.8064401951137368, 0.3542119609772526, 0.39343300814377197`]], {-105.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sri Lanka\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03027309904677925],
+     FontColor->RGBColor[
+      0.8745421494417032, 0.39318677583744527`, 0.11135537360425793`]], {99.5, 153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Romania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030010915318656673`],
+     FontColor->RGBColor[
+      0.7896667828057927, 0.3575666434388414, 0.4213886953236787]], {122.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Canada\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03224094087632762],
+     FontColor->RGBColor[0.9810598048862722, 0.7553955338762525, 0.]], {140.5, 110.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Algeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032977139655752497`],
+     FontColor->RGBColor[
+      0.35558897405758294`, 0.5505288207539337, 0.8417067688690995]], {140.5, -59.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kenya\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0341726573155977],
+     FontColor->RGBColor[0.7748409210981391, 0.358, 0.4444755060028629]], {-138.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Hungary\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02885672450079776],
+     FontColor->RGBColor[
+      0.9986489531525362, 0.7507447657626809, 0.0036478264881522893`]], {-138.5, -128.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Portugal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028921362369099115`],
+     FontColor->RGBColor[
+      0.9603267270590103, 0.5591336352950514, 0.10711783694067224`]], {-0.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ecuador\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02981874300278041],
+     FontColor->RGBColor[0.38354466123747527`, 0.5323732032575149, 0.85]], {141.5, -72.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Poland\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032253528194230316`],
+     FontColor->RGBColor[0.5472001045252132, 0.43417993728487203`, 0.85]], {-16.5, -160.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belgium\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029089225692403874`],
+     FontColor->RGBColor[
+      0.9840111653093676, 0.677555826546838, 0.04316985366470745]], {-144.5, -78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Somalia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02960786481510632],
+     FontColor->RGBColor[0.9307395679624266, 0.7498043964402695, 0.]], {45.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03297692586609679],
+     FontColor->RGBColor[
+      0.9637822400302223, 0.5764112001511111, 0.0977879519184]], {153.5, 13.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Taiwan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03056275450463477],
+     FontColor->RGBColor[0.47929071933511125`, 0.715, 0.1759027208462221]], {152.5, 25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burundi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029125519921074292`],
+     FontColor->RGBColor[0.5788038738141875, 0.715, 0.049249615145579635`]], {-45.5, 158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Rwanda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029253435550543785`],
+     FontColor->RGBColor[
+      0.922066817647527, 0.5213778784316846, 0.08286013588277422]], {149.5, 78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Senegal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02971038635501447],
+     FontColor->RGBColor[0.31827505306025683`, 0.715, 0.3808317506505822]], {-60.5, -159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Angola\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031653333981975486`],
+     FontColor->RGBColor[0.6361597700445392, 0.7170733077827265, 0.]], {151.5, -25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sweden\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028909619966233712`],
+     FontColor->RGBColor[0.4177882075393331, 0.715, 0.25417864494993975`]], {149.5, 90.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Yemen\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03128693900438293],
+     FontColor->RGBColor[0.7513196300394465, 0.358, 0.48066210763162087`]], {153.5, 36.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zambia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029908030432744037`],
+     FontColor->RGBColor[0.7175796237092107, 0.7261199581899123, 0.]], {78.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belarus\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028831292811251866`],
+     FontColor->RGBColor[
+      0.2198892179497479, 0.6590886256402017, 0.6788670615396974]], {-152.5, 92.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ghana\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0314372156579939],
+     FontColor->RGBColor[
+      0.9784200278733908, 0.649600139366954, 0.058265924741844846`]], {-69.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tunisia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029116823357982487`],
+     FontColor->RGBColor[
+      0.8926354502560807, 0.366046824615879, 0.15658862564020168`]], {151.5, 47.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malawi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029997932839377944`],
+     FontColor->RGBColor[
+      0.19193353076984873`, 0.681453175384121, 0.6453202369238185]], {152.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Spain\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03332707740934083],
+     FontColor->RGBColor[
+      0.6184987019729621, 0.39212575718243875`, 0.7412532450675947]], {152.5, -37.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0292751981082646],
+     FontColor->RGBColor[
+      0.26512246998569167`, 0.6229020240114467, 0.73314696398283]], {-86.5, 159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Austria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028777915174219244`],
+     FontColor->RGBColor[
+      0.8949268664259606, 0.5032845776173072, 0.05843417978336459]], {142.5, -113.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Jordan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02892213762775479],
+     FontColor->RGBColor[
+      0.3383114092015346, 0.5643508726387724, 0.8209736910418415]], {-151.5, 104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Greece\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02894864031429633],
+     FontColor->RGBColor[
+      0.8774935098648088, 0.34000129802703827`, 0.2750108168919853]], {-146.5, -111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Bolivia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029099278024169138`],
+     FontColor->RGBColor[0.4567336004533182, 0.4884598397280091, 0.85]], {-154.5, 30.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nepal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03120388642313842],
+     FontColor->RGBColor[0.2187618985811806, 0.715, 0.5074848563512248]], {-155.5, -33.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iran\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0378147524620454],
+     FontColor->RGBColor[0.8996399512215667, 0.7463488834690629, 0.]], {-17.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Serbia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02875190538491099],
+     FontColor->RGBColor[0.6672593867853922, 0.7205288207539324, 0.]], {-99.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Italy\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0349789513841575],
+     FontColor->RGBColor[0.5407932311309059, 0.715, 0.09762679674248334]], {-153.5, 44.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Niger\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030609737734039504`],
+     FontColor->RGBColor[0.6897400905885174, 0.358, 0.5753998606330502]], {157.5, 60.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Benin\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029153529137765775`],
+     FontColor->RGBColor[
+      0.6670481226429111, 0.3638052617916352, 0.6198796933927223]], {-146.5, 116.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Israel\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028735632183908046`],
+     FontColor->RGBColor[
+      0.9107287510704583, 0.33890687339431275`, 0.20182187767614543`]], {158.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Peru\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03166605747930939],
+     FontColor->RGBColor[
+      0.6536293927965667, 0.37163285420200276`, 0.6534265180085832]], {-158.5, 12.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chad\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029672054737437968`],
+     FontColor->RGBColor[
+      0.5750747800184488, 0.4174563783225715, 0.8498130499538777]], {-157.5, -46.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chile\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029996276270828136`],
+     FontColor->RGBColor[
+      0.8781534541180211, 0.4921023027453475, 0.04333810870621905]], {-157.5, 57.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cuba\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029057530833637685`],
+     FontColor->RGBColor[0.15725938678540247`, 0.715, 0.5857607804549424]], {-157.5, 69.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Syria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02980158162265539],
+     FontColor->RGBColor[
+      0.969373377466199, 0.6043668873309952, 0.08269188084126262]], {140.5, 122.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iraq\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03253985424576214],
+     FontColor->RGBColor[0.37977756485605163`, 0.715, 0.3025558265468435]], {-138.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Haiti\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029066679801671727`],
+     FontColor->RGBColor[0.7658565873730018, 0.358, 0.4582975578876895]], {112.5, -158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mali\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030133013073594624`],
+     FontColor->RGBColor[
+      0.9930578157165594, 0.7227890785827968, 0.01874389756528967]], {150.5, -125.5},
+     Center, Automatic]},
+  DefaultBaseStyle->{"Graphics", FontFamily -> "Source Sans Pro"},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic},
+  PlotRange->{{-174., 174.}, {-169., 165.}}]], "Output",
+ CellChangeTimes->{3.869421043430205*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"da9f5d83-9180-43d5-9e6a-5715e01b4c06"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordCloud", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{"ImageSize", "->", "Full"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8694210384348803`*^9, 3.869421041891813*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"c351c57d-39b4-4bcd-9351-3dc4fd71d558"],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    StyleBox["\<\"China\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.20114942528735633`],
+     FontColor->RGBColor[0.368417, 0.506779, 0.709798]], {0, 0}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"India\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.19400068134647583`],
+     FontColor->RGBColor[0.880722, 0.611041, 0.142051]], {-0.5, 64.5}, Center,
+     Automatic], InsetBox[
+    StyleBox["\<\"United States\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06763640024440098],
+     FontColor->RGBColor[0.560181, 0.691569, 0.194885]], {-1.5, -45.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Democratic Republic of the Congo\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.038485821922088895`],
+     FontColor->RGBColor[
+      0.838355547812947, 0.44746667828057946`, 0.0208888695323676]], {-0.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Indonesia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06065561844729745],
+     FontColor->RGBColor[0.922526, 0.385626, 0.209179]], {-0.5, -86.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Bangladesh\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04753970284906284],
+     FontColor->RGBColor[1, 0.75, 0]], {-0.5, 105.5}, Center, Automatic], 
+   InsetBox[
+    StyleBox["\<\"Pakistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.054312875849456044`],
+     FontColor->RGBColor[0.528488, 0.470624, 0.701351]], {-0.5, -108.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"United Kingdom\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035873659406116906`],
+     FontColor->RGBColor[
+      0.9324333565611593, 0.5282889043741062, 0.0921900209050434]], {80.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nigeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05253498179054453],
+     FontColor->RGBColor[0.363898, 0.618501, 0.782349]], {-88.5, -83.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"United Arab Emirates\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888444846376035],
+     FontColor->RGBColor[0.529922539669161, 0.44454647619850335`, 0.85]], {-0.5, 121.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Philippines\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04089844915341642],
+     FontColor->RGBColor[
+      0.9728288904374106, 0.621644452187053, 0.07336199581899142]], {85.5, 87.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Dominican Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02899983992401914],
+     FontColor->RGBColor[
+      0.6102054708420535, 0.39696347534213544`, 0.7619863228948663]], {-0.5, -124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Papua New Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028770759969468204`],
+     FontColor->RGBColor[
+      0.6453361616656581, 0.37647057236169945`, 0.6741595958358548]], {2.5, 133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Brazil\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05330865232892502],
+     FontColor->RGBColor[0.772079, 0.431554, 0.102387]], {107.5, -43.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"South Africa\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03483998352846197],
+     FontColor->RGBColor[0.47401116530937026`, 0.47809330081437784`, 0.85]], {93.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03387112026262631],
+     FontColor->RGBColor[
+      0.16397784358994957`, 0.7038177251280403, 0.6117734123079395]], {-28.5, 84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ethiopia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04154710890215897],
+     FontColor->RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85]], {71.5, -104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Germany\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03778956432880965],
+     FontColor->RGBColor[
+      0.8439466852489265, 0.3467106629502147, 0.3309221912517893]], {-75.5, -105.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Czech Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02898309804884987],
+     FontColor->RGBColor[0.7989994773739094, 0.735166608597101, 0.]], {-91.5, 99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Russia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04527949510892697],
+     FontColor->RGBColor[0.647624, 0.37816, 0.614037]], {-110.5, 37.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Mexico\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.043230572287067226`],
+     FontColor->RGBColor[0.571589, 0.586483, 0.]], {-111.5, -36.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Mozambique\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03145920803356897],
+     FontColor->RGBColor[0.428777913273419, 0.5052332520359486, 0.85]], {88.5, 101.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Saudi Arabia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03188804453421187],
+     FontColor->RGBColor[
+      0.23716678280579248`, 0.645266573755366, 0.699600139366951]], {-93.5, 111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Vietnam\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03942307131374047],
+     FontColor->RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965]], {87.5, 114.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Afghanistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03238389119705276],
+     FontColor->RGBColor[
+      0.8564488486273256, 0.42032672705901153`, 0.06612212156831418]], {88.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burkina Faso\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030211640907940044`],
+     FontColor->RGBColor[0.5019668524892619, 0.46131988850644284`, 0.85]], {-90.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"North Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030799205381796795`],
+     FontColor->RGBColor[
+      0.3103557220216354, 0.5867154223826917, 0.7874268664259625]], {-64.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Madagascar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031029650384504552`],
+     FontColor->RGBColor[
+      0.596786740995709, 0.404791067752503, 0.7955331475107271]], {-91.5, 124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Thailand\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03610431771642929],
+     FontColor->RGBColor[
+      0.28240003484173815`, 0.6090799721266095, 0.7538800418100857]], {-112.5, 52.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Japan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0429345573702874],
+     FontColor->RGBColor[0.915, 0.3325, 0.2125]], {109.5, 41.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"South Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02904151625304125],
+     FontColor->RGBColor[
+      0.8510135028964549, 0.47400900193096995`, 0.018912152606809424`]], {91.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Colombia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03382456629971178],
+     FontColor->RGBColor[
+      0.8613800418100862, 0.48092002787339083`, 0.02824203762907758]], {-113.5, 66.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Myanmar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.034249603996788044`],
+     FontColor->RGBColor[
+      0.9874666782805795, 0.6948333914028977, 0.033839968642435214`]], {-113.5, -51.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uzbekistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031725994867491676`],
+     FontColor->RGBColor[
+      0.9052934053395919, 0.510195603559728, 0.06776406480563275]], {106.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tanzania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03489126448430518],
+     FontColor->RGBColor[
+      0.8857244243136628, 0.3764133635295058, 0.1393110607841571]], {113.5, 65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Netherlands\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029757499979237396`],
+     FontColor->RGBColor[0.7277983389807635, 0.358, 0.5168487092603637]], {3.5, -136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ivory Coast\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03087144796748493],
+     FontColor->RGBColor[
+      0.8607200975568693, 0.34335598048862614`, 0.30296650407188447`]], {-115.5, 81.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Argentina\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.033139197276315584`],
+     FontColor->RGBColor[
+      0.8878600487784333, 0.33792799024431336`, 0.2577332520359445]], {-77.5, 136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kazakhstan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029955361944056885`],
+     FontColor->RGBColor[
+      0.6319174318193065, 0.38429816477207124`, 0.7077064204517338]], {55.5, 144.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cameroon\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03089164458225971],
+     FontColor->RGBColor[0.8493197142977551, 0.7407577460330839, 0.]], {67.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Venezuela\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031119423239909662`],
+     FontColor->RGBColor[
+      0.8342400905885153, 0.4628267270590103, 0.0038160815296638794`]], {117.5, 139.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Turkey\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03785646361925833],
+     FontColor->RGBColor[
+      0.5833680111493557, 0.4126186601628758, 0.8290799721266107]], {-122.5, 18.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guatemala\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029851583576460252`],
+     FontColor->RGBColor[
+      0.9046334610863751, 0.334573307782725, 0.22977756485604156`]], {-122.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zimbabwe\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029483701471273875`],
+     FontColor->RGBColor[
+      0.8335801463353031, 0.3487839707329394, 0.3481997561078282]], {-128.5, -20.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Azerbaijan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02891442902835943],
+     FontColor->RGBColor[0.7042770479220728, 0.358, 0.5530353108891188]], {-130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cambodia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02970737847676373],
+     FontColor->RGBColor[
+      0.845266573755366, 0.437100139366951, 0.03816643438841502]], {130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Egypt\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.040025131425228296`],
+     FontColor->RGBColor[0.736782672705901, 0.358, 0.5030266573755369]], {122.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Morocco\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032140722576498325`],
+     FontColor->RGBColor[
+      0.8168067340273636, 0.3521386531945273, 0.3761554432877274]], {-2.5, 145.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"France\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035558820756049235`],
+     FontColor->RGBColor[
+      0.6753413537738198, 0.3589675436319385, 0.5991466155654507]], {-17.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Australia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030765590272537904`],
+     FontColor->RGBColor[
+      0.9492067688690977, 0.5394711792460651, 0.10728609198218791`]], {-53.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malaysia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031593045058040274`],
+     FontColor->RGBColor[
+      0.9038177251280404, 0.3492734123079395, 0.18454431282010084`]], {129.5, -98.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ukraine\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03296300543592157],
+     FontColor->RGBColor[0.7132613816472081, 0.358, 0.5392132590042952]], {-64.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uganda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03320490361084439],
+     FontColor->RGBColor[0.7678998606330495, 0.7317110956258943, 0.]], {-131.5, -99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Honduras\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888616070921035],
+     FontColor->RGBColor[
+      0.8633598745697435, 0.40996018814538476`, 0.08339968642435877]], {31.5, -153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tajikistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02884193661969707],
+     FontColor->RGBColor[
+      0.8064401951137368, 0.3542119609772526, 0.39343300814377197`]], {-105.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sri Lanka\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03027309904677925],
+     FontColor->RGBColor[
+      0.8745421494417032, 0.39318677583744527`, 0.11135537360425793`]], {99.5, 153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Romania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030010915318656673`],
+     FontColor->RGBColor[
+      0.7896667828057927, 0.3575666434388414, 0.4213886953236787]], {122.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Canada\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03224094087632762],
+     FontColor->RGBColor[0.9810598048862722, 0.7553955338762525, 0.]], {140.5, 110.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Algeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032977139655752497`],
+     FontColor->RGBColor[
+      0.35558897405758294`, 0.5505288207539337, 0.8417067688690995]], {140.5, -59.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kenya\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0341726573155977],
+     FontColor->RGBColor[0.7748409210981391, 0.358, 0.4444755060028629]], {-138.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Hungary\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02885672450079776],
+     FontColor->RGBColor[
+      0.9986489531525362, 0.7507447657626809, 0.0036478264881522893`]], {-138.5, -128.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Portugal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028921362369099115`],
+     FontColor->RGBColor[
+      0.9603267270590103, 0.5591336352950514, 0.10711783694067224`]], {-0.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ecuador\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02981874300278041],
+     FontColor->RGBColor[0.38354466123747527`, 0.5323732032575149, 0.85]], {141.5, -72.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Poland\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032253528194230316`],
+     FontColor->RGBColor[0.5472001045252132, 0.43417993728487203`, 0.85]], {-16.5, -160.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belgium\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029089225692403874`],
+     FontColor->RGBColor[
+      0.9840111653093676, 0.677555826546838, 0.04316985366470745]], {-144.5, -78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Somalia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02960786481510632],
+     FontColor->RGBColor[0.9307395679624266, 0.7498043964402695, 0.]], {45.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03297692586609679],
+     FontColor->RGBColor[
+      0.9637822400302223, 0.5764112001511111, 0.0977879519184]], {153.5, 13.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Taiwan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03056275450463477],
+     FontColor->RGBColor[0.47929071933511125`, 0.715, 0.1759027208462221]], {152.5, 25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burundi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029125519921074292`],
+     FontColor->RGBColor[0.5788038738141875, 0.715, 0.049249615145579635`]], {-45.5, 158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Rwanda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029253435550543785`],
+     FontColor->RGBColor[
+      0.922066817647527, 0.5213778784316846, 0.08286013588277422]], {149.5, 78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Senegal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02971038635501447],
+     FontColor->RGBColor[0.31827505306025683`, 0.715, 0.3808317506505822]], {-60.5, -159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Angola\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031653333981975486`],
+     FontColor->RGBColor[0.6361597700445392, 0.7170733077827265, 0.]], {151.5, -25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sweden\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028909619966233712`],
+     FontColor->RGBColor[0.4177882075393331, 0.715, 0.25417864494993975`]], {149.5, 90.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Yemen\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03128693900438293],
+     FontColor->RGBColor[0.7513196300394465, 0.358, 0.48066210763162087`]], {153.5, 36.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zambia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029908030432744037`],
+     FontColor->RGBColor[0.7175796237092107, 0.7261199581899123, 0.]], {78.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belarus\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028831292811251866`],
+     FontColor->RGBColor[
+      0.2198892179497479, 0.6590886256402017, 0.6788670615396974]], {-152.5, 92.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ghana\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0314372156579939],
+     FontColor->RGBColor[
+      0.9784200278733908, 0.649600139366954, 0.058265924741844846`]], {-69.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tunisia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029116823357982487`],
+     FontColor->RGBColor[
+      0.8926354502560807, 0.366046824615879, 0.15658862564020168`]], {151.5, 47.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malawi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029997932839377944`],
+     FontColor->RGBColor[
+      0.19193353076984873`, 0.681453175384121, 0.6453202369238185]], {152.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Spain\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03332707740934083],
+     FontColor->RGBColor[
+      0.6184987019729621, 0.39212575718243875`, 0.7412532450675947]], {152.5, -37.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0292751981082646],
+     FontColor->RGBColor[
+      0.26512246998569167`, 0.6229020240114467, 0.73314696398283]], {-86.5, 159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Austria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028777915174219244`],
+     FontColor->RGBColor[
+      0.8949268664259606, 0.5032845776173072, 0.05843417978336459]], {142.5, -113.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Jordan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02892213762775479],
+     FontColor->RGBColor[
+      0.3383114092015346, 0.5643508726387724, 0.8209736910418415]], {-151.5, 104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Greece\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02894864031429633],
+     FontColor->RGBColor[
+      0.8774935098648088, 0.34000129802703827`, 0.2750108168919853]], {-146.5, -111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Bolivia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029099278024169138`],
+     FontColor->RGBColor[0.4567336004533182, 0.4884598397280091, 0.85]], {-154.5, 30.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nepal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03120388642313842],
+     FontColor->RGBColor[0.2187618985811806, 0.715, 0.5074848563512248]], {-155.5, -33.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iran\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0378147524620454],
+     FontColor->RGBColor[0.8996399512215667, 0.7463488834690629, 0.]], {-17.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Serbia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02875190538491099],
+     FontColor->RGBColor[0.6672593867853922, 0.7205288207539324, 0.]], {-99.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Italy\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0349789513841575],
+     FontColor->RGBColor[0.5407932311309059, 0.715, 0.09762679674248334]], {-153.5, 44.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Niger\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030609737734039504`],
+     FontColor->RGBColor[0.6897400905885174, 0.358, 0.5753998606330502]], {157.5, 60.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Benin\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029153529137765775`],
+     FontColor->RGBColor[
+      0.6670481226429111, 0.3638052617916352, 0.6198796933927223]], {-146.5, 116.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Israel\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028735632183908046`],
+     FontColor->RGBColor[
+      0.9107287510704583, 0.33890687339431275`, 0.20182187767614543`]], {158.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Peru\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03166605747930939],
+     FontColor->RGBColor[
+      0.6536293927965667, 0.37163285420200276`, 0.6534265180085832]], {-158.5, 12.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chad\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029672054737437968`],
+     FontColor->RGBColor[
+      0.5750747800184488, 0.4174563783225715, 0.8498130499538777]], {-157.5, -46.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chile\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029996276270828136`],
+     FontColor->RGBColor[
+      0.8781534541180211, 0.4921023027453475, 0.04333810870621905]], {-157.5, 57.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cuba\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029057530833637685`],
+     FontColor->RGBColor[0.15725938678540247`, 0.715, 0.5857607804549424]], {-157.5, 69.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Syria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02980158162265539],
+     FontColor->RGBColor[
+      0.969373377466199, 0.6043668873309952, 0.08269188084126262]], {140.5, 122.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iraq\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03253985424576214],
+     FontColor->RGBColor[0.37977756485605163`, 0.715, 0.3025558265468435]], {-138.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Haiti\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029066679801671727`],
+     FontColor->RGBColor[0.7658565873730018, 0.358, 0.4582975578876895]], {112.5, -158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mali\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030133013073594624`],
+     FontColor->RGBColor[
+      0.9930578157165594, 0.7227890785827968, 0.01874389756528967]], {150.5, -125.5},
+     Center, Automatic]},
+  DefaultBaseStyle->{"Graphics", FontFamily -> "Source Sans Pro"},
+  ImageSize->Full,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic},
+  PlotRange->{{-174., 174.}, {-169., 165.}}]], "Output",
+ CellChangeTimes->{3.869421050957838*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"47e0793a-782b-4397-a2c5-fafdd4d24567"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordCloud", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{"ImageSize", "->", "Full"}], ",", 
+   RowBox[{"PlotTheme", "->", "\"\<Business\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8694210384348803`*^9, 3.8694210647400265`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"fd25d0e8-ce39-4b80-98a8-e7d28a8f4d3e"],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    StyleBox["\<\"China\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.20114942528735633`],
+     FontColor->RGBColor[0.34398, 0.49112, 0.89936]], {0, 0}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"India\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.19400068134647583`],
+     FontColor->RGBColor[0.97, 0.606, 0.081]], {-0.5, 64.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"United States\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06763640024440098],
+     FontColor->RGBColor[0.91, 0.318, 0.243]], {-1.5, -45.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Democratic Republic of the Congo\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.038485821922088895`],
+     FontColor->RGBColor[0.6626604489967154, 0.28, 0.6343685400050532]], {-0.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Indonesia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06065561844729745],
+     FontColor->RGBColor[0.448, 0.69232, 0.1538]], {-0.5, -86.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Bangladesh\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04753970284906284],
+     FontColor->RGBColor[0.94, 0.462, 0.162]], {-0.5, 105.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Pakistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.054312875849456044`],
+     FontColor->RGBColor[0.62168, 0.2798, 0.6914]], {-0.5, -108.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"United Kingdom\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035873659406116906`],
+     FontColor->RGBColor[
+      0.7844785106204277, 0.27310429787591445`, 0.44253581563262046`]], {80.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nigeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05253498179054453],
+     FontColor->RGBColor[0.46056, 0.40064, 0.81392]], {-88.5, -83.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"United Arab Emirates\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888444846376035],
+     FontColor->RGBColor[0.4321192494334227, 0.7, 0.15003004617564383`]], {-0.5, 121.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Philippines\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04089844915341642],
+     FontColor->RGBColor[
+      0.8680706456216862, 0.2563858708756628, 0.30321559063052295`]], {85.5, 87.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Dominican Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02899983992401914],
+     FontColor->RGBColor[0.12561475442879844`, 0.7, 0.5401266761815292]], {-0.5, -124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Papua New Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028770759969468204`],
+     FontColor->RGBColor[
+      0.02900701872210476, 0.6767943850223161, 0.7348084224665257]], {2.5, 133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Brazil\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05330865232892502],
+     FontColor->RGBColor[0.09096, 0.6296, 0.85532]], {107.5, -43.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"South Africa\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03483998352846197],
+     FontColor->RGBColor[0.5719526706406343, 0.7024391856267371, 0.]], {93.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03387112026262631],
+     FontColor->RGBColor[
+      0.9746117974981068, 0.6230589874905341, 0.06854814675511157]], {-28.5, 84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ethiopia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04154710890215897],
+     FontColor->RGBColor[0.72694101250947, 0.7196601125010522, 0.]], {71.5, -104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Germany\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03778956432880965],
+     FontColor->RGBColor[0.4672942406178979, 0.36962345562926124`, 1]], {-75.5, -105.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Czech Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02898309804884987],
+     FontColor->RGBColor[
+      0.8048050575098898, 0.39279241373516527`, 0.012012643774724552`]], {-91.5, 99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Russia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04527949510892697],
+     FontColor->RGBColor[0., 0.7, 0.7]], {-110.5, 37.5}, Center, Automatic], 
+   InsetBox[
+    StyleBox["\<\"Mexico\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.043230572287067226`],
+     FontColor->RGBColor[0.827051, 0.418034, 0.0243459]], {-111.5, -36.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Mozambique\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03145920803356897],
+     FontColor->RGBColor[0.6677407337755419, 0.713082303752838, 0.]], {88.5, 101.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Saudi Arabia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03188804453421187],
+     FontColor->RGBColor[
+      0.9918327243724228, 0.709163621862114, 0.02205164419445843]], {-93.5, 111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Vietnam\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03942307131374047],
+     FontColor->RGBColor[
+      0.9573908706237908, 0.5369543531189542, 0.11504464931576472`]], {87.5, 114.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Afghanistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03238389119705276],
+     FontColor->RGBColor[0.6349883418688439, 0.28, 0.6769410125094708]], {88.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burkina Faso\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030211640907940044`],
+     FontColor->RGBColor[0.50447514566375, 0.7, 0.05794072370068192]], {-90.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"North Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030799205381796795`],
+     FontColor->RGBColor[0.9185171387793254, 0.7409463487532584, 0.]], {-64.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Madagascar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031029650384504552`],
+     FontColor->RGBColor[0.19797065065912567`, 0.7, 0.44803735370656733`]], {-91.5, 124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Thailand\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03610431771642929],
+     FontColor->RGBColor[0.9777174175132615, 0.7475241575014735, 0.]], {-112.5, 52.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Japan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0429345573702874],
+     FontColor->RGBColor[
+      0.5511749434976025, 0.32014794962639853`, 0.8720626412559938]], {109.5, 41.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02904151625304125],
+     FontColor->RGBColor[0.6968650544874248, 0.28, 0.5817460700193464]], {91.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Colombia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03382456629971178],
+     FontColor->RGBColor[0.707434858869937, 0.28, 0.5654848325077892]], {-113.5, 66.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Myanmar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.034249603996788044`],
+     FontColor->RGBColor[
+      0.8868443825035769, 0.2697334262446347, 0.21711095625894217`]], {-113.5, -51.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uzbekistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031725994867491676`],
+     FontColor->RGBColor[
+      0.7525491562421092, 0.27949016875157817`, 0.4957514062631514]], {106.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tanzania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03489126448430518],
+     FontColor->RGBColor[
+      0.5925051679959609, 0.2960386520023562, 0.7687370800100979]], {113.5, 65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Netherlands\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029757499979237396`],
+     FontColor->RGBColor[
+      0.22154283435474653`, 0.5227657325162027, 0.9658514012256958]], {3.5, -136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ivory Coast\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03087144796748493],
+     FontColor->RGBColor[
+      0.5000879764922928, 0.34994868037949584`, 0.999780058769268]], {-115.5, 81.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Argentina\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.033139197276315584`],
+     FontColor->RGBColor[
+      0.5256314599949519, 0.3350483150029447, 0.9359213500126202]], {-77.5, 136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kazakhstan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029955361944056885`],
+     FontColor->RGBColor[0.008540455041649908, 0.7, 0.689130329946991]], {55.5, 144.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cameroon\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03089164458225971],
+     FontColor->RGBColor[
+      0.817960675006313, 0.37305898749053057`, 0.044901687515782385`]], {67.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Venezuela\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031119423239909662`],
+     FontColor->RGBColor[0.6797627517420747, 0.28, 0.6080573050121927]], {117.5, 139.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Turkey\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03785646361925833],
+     FontColor->RGBColor[0.27032654688947244`, 0.7, 0.35594803123158053`]], {-122.5, 18.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guatemala\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029851583576460252`],
+     FontColor->RGBColor[
+      0.5414182009906512, 0.3258393827554535, 0.8964544975233721]], {-122.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zimbabwe\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029483701471273875`],
+     FontColor->RGBColor[0.4469676937284248, 0.3818193837629451, 1]], {-128.5, -20.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Azerbaijan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02891442902835943],
+     FontColor->RGBColor[
+      0.16832724372422447`, 0.5653382050206204, 0.9019926924690693]], {-130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cambodia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02970737847676373],
+     FontColor->RGBColor[0.6520906446142033, 0.28, 0.6506297775166103]], {130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Egypt\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.040025131425228296`],
+     FontColor->RGBColor[
+      0.2418693812442152, 0.5065044950046278, 0.9902432574930582]], {122.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Morocco\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032140722576498325`],
+     FontColor->RGBColor[0.414078649987367, 0.4015528100075798, 1]], {-2.5, 145.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"France\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035558820756049235`],
+     FontColor->RGBColor[
+      0.10254915624210881`, 0.6179606750063129, 0.8230589874905305]], {-17.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Australia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030765590272537904`],
+     FontColor->RGBColor[
+      0.8042119368650624, 0.2691576126269875, 0.4096467718915626]], {-53.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malaysia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031593045058040274`],
+     FontColor->RGBColor[
+      0.5669616844933018, 0.31093901737890733`, 0.8325957887667457]], {129.5, -98.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ukraine\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03296300543592157],
+     FontColor->RGBColor[
+      0.1886537906136887, 0.549076967509049, 0.9263845487364264]], {-64.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uganda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03320490361084439],
+     FontColor->RGBColor[
+      0.8049883418688417, 0.40332556124589447`, 0.0044895076819575054`]], {-131.5, -99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Honduras\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888616070921035],
+     FontColor->RGBColor[0.6244185374863226, 0.28, 0.6932022500210422]], {31.5, -153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tajikistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02884193661969707],
+     FontColor->RGBColor[0.39375210309790276`, 0.41374873814125834`, 1]], {-105.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sri Lanka\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03027309904677925],
+     FontColor->RGBColor[
+      0.6082919089916601, 0.286829719754865, 0.7292702275208498]], {99.5, 153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Romania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030010915318656673`],
+     FontColor->RGBColor[0.36086305935684493`, 0.43348216438589304`, 1]], {122.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Canada\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03224094087632762],
+     FontColor->RGBColor[
+      0.8524025287549449, 0.32139620686758263`, 0.13100632188736228`]], {140.5, 110.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Algeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032977139655752497`],
+     FontColor->RGBColor[0.8227290756444177, 0.7303032306271575, 0.]], {140.5, -59.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kenya\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0341726573155977],
+     FontColor->RGBColor[0.3279740156157871, 0.45321559063052774`, 1]], {-138.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Hungary\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02885672450079776],
+     FontColor->RGBColor[
+      0.8605331475107306, 0.3092002787339041, 0.1513328687768265]], {-138.5, -128.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Portugal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028921362369099115`],
+     FontColor->RGBColor[
+      0.8239453631096971, 0.26521092737806057`, 0.3767577281505048]], {-0.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ecuador\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02981874300278041],
+     FontColor->RGBColor[0.7635287969104816, 0.7237254218789424, 0.]], {141.5, -72.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Poland\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032253528194230316`],
+     FontColor->RGBColor[0.38740084627660143`, 0.7, 0.20694437746614366`]], {-16.5, -160.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belgium\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029089225692403874`],
+     FontColor->RGBColor[
+      0.8949750012593626, 0.25753749811095616`, 0.2374375031484064]], {-144.5, -78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Somalia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02960786481510632],
+     FontColor->RGBColor[
+      0.8392469112585218, 0.34112963311221733`, 0.09811727814630444]], {45.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03297692586609679],
+     FontColor->RGBColor[
+      0.8361412912433757, 0.2627717417513249, 0.35643118126104056`]], {153.5, 13.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Taiwan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03056275450463477],
+     FontColor->RGBColor[
+      0.9083139031147375, 0.4722092687431584, 0.0974825128032638]], {152.5, 25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burundi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029125519921074292`],
+     FontColor->RGBColor[
+      0.8763845487364244, 0.45092303249094956`, 0.06874609386278188]], {-45.5, 158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Rwanda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029253435550543785`],
+     FontColor->RGBColor[
+      0.7722825824867492, 0.2755434835026502, 0.4628623625220847]], {149.5, 78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Senegal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02971038635501447],
+     FontColor->RGBColor[
+      0.9533255612458944, 0.5166278062294722, 0.126020984636085]], {-60.5, -159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Angola\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031653333981975486`],
+     FontColor->RGBColor[
+      0.8566511224917897, 0.4377674149945264, 0.05098601024261065]], {151.5, -25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sweden\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028909619966233712`],
+     FontColor->RGBColor[
+      0.9280473293593722, 0.4853648862395815, 0.11524259642343503`]], {149.5, 90.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Yemen\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03128693900438293],
+     FontColor->RGBColor[0.27475842498526504`, 0.485144945008841, 1]], {153.5, 36.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zambia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029908030432744037`],
+     FontColor->RGBColor[
+      0.8247217681134764, 0.4164811787423176, 0.022249591302128738`]], {78.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belarus\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028831292811251866`],
+     FontColor->RGBColor[
+      0.9877674149945264, 0.688837074972632, 0.033027979514778705`]], {-152.5, 92.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ghana\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0314372156579939],
+     FontColor->RGBColor[
+      0.8878040718663236, 0.2524391856267353, 0.2703265468894607]], {-69.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tunisia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029116823357982487`],
+     FontColor->RGBColor[
+      0.5827484254890095, 0.30173008513141114`, 0.7931289362774763]], {151.5, 47.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malawi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029997932839377944`],
+     FontColor->RGBColor[
+      0.9811896062463148, 0.6559480312315742, 0.050788063134949935`]], {152.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Spain\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03332707740934083],
+     FontColor->RGBColor[0.08089635127197714, 0.7, 0.597041007472029]], {152.5, -37.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0292751981082646],
+     FontColor->RGBColor[
+      0.9984105331206308, 0.7420526656031541, 0.004291560574296804]], {-86.5, 159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Austria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028777915174219244`],
+     FontColor->RGBColor[0.7416394643606463, 0.28, 0.5128623625220825]], {142.5, -113.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Jordan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02892213762775479],
+     FontColor->RGBColor[0.8593168600454533, 0.7343685400050504, 0.]], {-151.5, 104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Greece\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02894864031429633],
+     FontColor->RGBColor[
+      0.5158747174880005, 0.34073974813199964`, 0.9603132062799986]], {-146.5, -111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Bolivia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029099278024169138`],
+     FontColor->RGBColor[0.6085404550416378, 0.7065044950046264, 0.]], {-154.5, 30.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nepal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03120388642313842],
+     FontColor->RGBColor[
+      0.9639686793719988, 0.5698433968599943, 0.09728456569560309]], {-155.5, -33.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iran\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0378147524620454],
+     FontColor->RGBColor[
+      0.8311162925027361, 0.35332556124589587`, 0.07779073125684022]], {-17.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Serbia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02875190538491099],
+     FontColor->RGBColor[
+      0.8444551943581218, 0.42963679623874784`, 0.04000967492230956]], {-99.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Italy\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0349789513841575],
+     FontColor->RGBColor[
+      0.8885804768701082, 0.4590536512467388, 0.07972242918309735]], {-153.5, 44.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Niger\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030609737734039504`],
+     FontColor->RGBColor[
+      0.13543819998316664`, 0.5916494400134666, 0.8625258399797999]], {157.5, 60.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Benin\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029153529137765775`],
+     FontColor->RGBColor[
+      0.08222260935264458, 0.6342219125178843, 0.7986671312231735]], {-146.5, 116.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Israel\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028735632183908046`],
+     FontColor->RGBColor[
+      0.5572049419863674, 0.31663045050795235`, 0.8569876450340814]], {158.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Peru\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03166605747930939],
+     FontColor->RGBColor[
+      0.04933356561158675, 0.6605331475107306, 0.759200278733904]], {-158.5, 12.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chad\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029672054737437968`],
+     FontColor->RGBColor[0.3150449500462742, 0.7, 0.29903369994110557`]], {-157.5, -46.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chile\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029996276270828136`],
+     FontColor->RGBColor[0.7245371616152962, 0.28, 0.5391735975149288]], {-157.5, 57.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cuba\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029057530833637685`],
+     FontColor->RGBColor[
+      0.9705464881202104, 0.6027324406010521, 0.07952448207543186]], {-157.5, 69.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Syria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02980158162265539],
+     FontColor->RGBColor[
+      0.8558747174880104, 0.25882505650239795`, 0.32354213751998273`]], {140.5, 122.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iraq\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03253985424576214],
+     FontColor->RGBColor[
+      0.940243257493056, 0.49349550499537076`, 0.1262189317437505]], {-138.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Haiti\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029066679801671727`],
+     FontColor->RGBColor[0.30764746872632287`, 0.4654115187642063, 1]], {112.5, -158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mali\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030133013073594624`],
+     FontColor->RGBColor[
+      0.8736887650071538, 0.2894668524892694, 0.18422191251788433`]], {150.5, -125.5},
+     Center, Automatic]},
+  DefaultBaseStyle->{"Graphics", FontFamily -> "Source Sans Pro"},
+  ImageSize->Full,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic},
+  PlotRange->{{-174., 174.}, {-169., 165.}}]], "Output",
+ CellChangeTimes->{3.8694210693122063`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"9675c9a1-2319-447a-98db-16582e6e0feb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordCloud", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{"ImageSize", "->", "Full"}], ",", 
+   RowBox[{"PlotTheme", "->", "\"\<Web\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8694210384348803`*^9, 3.869421078174564*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"61cf49f5-5730-4c9b-b8ea-99f92afaae69"],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    StyleBox["\<\"China\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.20114942528735633`],
+     FontColor->RGBColor[0.790588, 0.201176, 0.]], {0, 0}, Center, Automatic],
+    InsetBox[
+    StyleBox["\<\"India\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.19400068134647583`],
+     FontColor->RGBColor[0.192157, 0.388235, 0.807843]], {-0.5, 64.5}, Center,
+     Automatic], InsetBox[
+    StyleBox["\<\"United States\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06763640024440098],
+     FontColor->RGBColor[1., 0.607843, 0.]], {-1.5, -45.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Democratic Republic of the Congo\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.038485821922088895`],
+     FontColor->RGBColor[
+      0.5238517042330579, 0.2719198391973829, 0.7153707394173552]], {-0.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Indonesia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.06065561844729745],
+     FontColor->RGBColor[0., 0.596078, 0.109804]], {-0.5, -86.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"Bangladesh\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04753970284906284],
+     FontColor->RGBColor[0.499929, 0.285875, 0.775177]], {-0.5, 105.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"Pakistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.054312875849456044`],
+     FontColor->RGBColor[0.567426, 0.32317, 0.729831]], {-0.5, -108.5}, 
+    Center, Automatic], InsetBox[
+    StyleBox["\<\"United Kingdom\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035873659406116906`],
+     FontColor->RGBColor[0.6159549636873395, 0.252, 0.5408385174040933]], {80.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nigeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05253498179054453],
+     FontColor->RGBColor[0.8505, 0.4275, 0.13185]], {-88.5, -83.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"United Arab Emirates\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888444846376035],
+     FontColor->RGBColor[0.5025466566368246, 0.6308385174040916, 0.]], {-0.5, 121.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Philippines\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04089844915341642],
+     FontColor->RGBColor[0.6746366424582266, 0.252, 0.45055901160272827`]], {85.5, 87.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Dominican Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02899983992401914],
+     FontColor->RGBColor[0.2559550504912446, 0.63, 0.30423902664750685`]], {-0.5, -124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Papua New Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028770759969468204`],
+     FontColor->RGBColor[0.10251659204108926`, 0.63, 0.49952433740225005`]], {2.5, 133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Brazil\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.05330865232892502],
+     FontColor->RGBColor[0., 0.588235, 0.705882]], {107.5, -43.5}, Center, 
+    Automatic], InsetBox[
+    StyleBox["\<\"South Africa\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03483998352846197],
+     FontColor->RGBColor[0.5984511081857363, 0.6414945675761929, 0.]], {93.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03387112026262631],
+     FontColor->RGBColor[
+      0.8744167287549299, 0.5470836437746498, 0.06907483236168915]], {-28.5, 84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ethiopia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04154710890215897],
+     FontColor->RGBColor[0.7239916650994997, 0.6554435183443889, 0.]], {71.5, -104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Germany\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03778956432880965],
+     FontColor->RGBColor[0.30841419880781473`, 0.39995148071531117`, 0.9]], {-75.5, -105.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Czech Republic\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02898309804884987],
+     FontColor->RGBColor[
+      0.8120351244899582, 0.23517562244979082`, 0.22031921367309623`]], {-91.5, 99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Russia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.04527949510892697],
+     FontColor->RGBColor[0.12490296143062507`, 0.63, 0.47103259454284074`]], {-110.5, 37.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mexico\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.043230572287067226`],
+     FontColor->RGBColor[
+      0.823948950768196, 0.29474475384097976`, 0.19291741323314934`]], {-111.5, -36.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mozambique\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03145920803356897],
+     FontColor->RGBColor[0.6760394393250375, 0.6501154932583375, 0.]], {88.5, 101.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Saudi Arabia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03188804453421187],
+     FontColor->RGBColor[
+      0.8883656795231258, 0.6168283976156295, 0.03141266528756009]], {-93.5, 111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Vietnam\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03942307131374047],
+     FontColor->RGBColor[
+      0.8604677779867332, 0.4773388899336664, 0.10673699943582014`]], {87.5, 114.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Afghanistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03238389119705276],
+     FontColor->RGBColor[
+      0.5031614825959092, 0.2839891351523863, 0.767096293510227]], {88.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burkina Faso\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030211640907940044`],
+     FontColor->RGBColor[0.5504988824112611, 0.6361665424901402, 0.]], {-90.5, -119.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"North Korea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030799205381796795`],
+     FontColor->RGBColor[0.8791683273781151, 0.6726853697086795, 0.]], {-64.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Madagascar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031029650384504552`],
+     FontColor->RGBColor[0.3145633264378097, 0.63, 0.2296466754427877]], {-91.5, 124.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Thailand\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03610431771642929],
+     FontColor->RGBColor[
+      0.8969866052052705, 0.6599330260263523, 0.008136165945769741]], {-112.5, 52.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Japan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0429345573702874],
+     FontColor->RGBColor[0.42126358105951733`, 0.33224185136428963`, 0.9]], {109.5, 41.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"South Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02904151625304125],
+     FontColor->RGBColor[
+      0.5494262246461028, 0.25700136895644005`, 0.6514344383847431]], {91.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Colombia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03382456629971178],
+     FontColor->RGBColor[
+      0.5573291860767265, 0.2523913081219096, 0.6316770348081839]], {-113.5, 66.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Myanmar\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.034249603996788044`],
+     FontColor->RGBColor[
+      0.7164275936025443, 0.24371448127949116`, 0.38095401066242623`]], {-113.5, -51.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uzbekistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031725994867491676`],
+     FontColor->RGBColor[0.5935405569137635, 0.252, 0.5753222201326715]], {106.5, -133.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tanzania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03489126448430518],
+     FontColor->RGBColor[
+      0.469684000752239, 0.30351766622786064`, 0.8507899981194027]], {113.5, 65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Netherlands\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029757499979237396`],
+     FontColor->RGBColor[
+      0.10935555973466561`, 0.5425155522122675, 0.7612266716815987]], {3.5, -136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ivory Coast\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03087144796748493],
+     FontColor->RGBColor[0.33505432423806436`, 0.3839674054571614, 0.9]], {-115.5, 81.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Argentina\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.033139197276315584`],
+     FontColor->RGBColor[0.3781589526487873, 0.35810462841072765`, 0.9]], {-77.5, 136.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kazakhstan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029955361944056885`],
+     FontColor->RGBColor[0.1611248679876543, 0.63, 0.42493198619753086`]], {55.5, 144.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cameroon\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03089164458225971],
+     FontColor->RGBColor[
+      0.8001212982117243, 0.22697574035765516`, 0.2414645029804596]], {67.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Venezuela\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031119423239909662`],
+     FontColor->RGBColor[
+      0.5366389644395795, 0.26446060407691196`, 0.6834025889010513]], {117.5, 139.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Turkey\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03785646361925833],
+     FontColor->RGBColor[0.37317160238437475`, 0.63, 0.1550543242380685]], {-122.5, 18.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guatemala\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029851583576460252`],
+     FontColor->RGBColor[0.40479907807904414`, 0.34212055315257356`, 0.9]], {-122.5, -143.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zimbabwe\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029483701471273875`],
+     FontColor->RGBColor[0.29194969582734154`, 0.4098301825035951, 0.9]], {-128.5, -20.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Azerbaijan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02891442902835943],
+     FontColor->RGBColor[
+      0.06625093132394275, 0.5769992549408458, 0.7095011175887312]], {-130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cambodia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02970737847676373],
+     FontColor->RGBColor[
+      0.5159487428024325, 0.27652990003191436`, 0.7351281429939188]], {130.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Egypt\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.040025131425228296`],
+     FontColor->RGBColor[
+      0.12582006271512805`, 0.5293439498278976, 0.7809840752581536]], {122.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Morocco\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032140722576498325`],
+     FontColor->RGBColor[0.26530957039708464`, 0.4258142577617492, 0.9]], {-2.5, 145.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"France\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.035558820756049235`],
+     FontColor->RGBColor[
+      0.01297068046342185, 0.6196234556292626, 0.6455648165561062]], {-17.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Australia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030765590272537904`],
+     FontColor->RGBColor[0.6298078289110768, 0.252, 0.519526417059882]], {-53.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malaysia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031593045058040274`],
+     FontColor->RGBColor[0.44790370648976696`, 0.3162577761061398, 0.9]], {129.5, -98.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ukraine\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03296300543592157],
+     FontColor->RGBColor[
+      0.08271543430440877, 0.5638276525564729, 0.7292585211652906]], {-64.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Uganda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03320490361084439],
+     FontColor->RGBColor[
+      0.8153280250860514, 0.2516401254302569, 0.21274554230208187`]], {-131.5, -99.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Honduras\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02888616070921035],
+     FontColor->RGBColor[
+      0.49525852116528557`, 0.2885991959869168, 0.7868536970867862]], {31.5, -153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tajikistan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02884193661969707],
+     FontColor->RGBColor[0.24884506741661863`, 0.43569295955002885`, 0.9]], {-105.5, 147.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sri Lanka\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03027309904677925],
+     FontColor->RGBColor[
+      0.48247126095876225`, 0.2960584311073887, 0.8188218476030944]], {99.5, 153.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Romania\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030010915318656673`],
+     FontColor->RGBColor[
+      0.22220494198636823`, 0.4522360464109054, 0.8966459303836418]], {122.5, -146.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Canada\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03224094087632762],
+     FontColor->RGBColor[
+      0.7582744459071321, 0.2353451108185736, 0.3112092568214465]], {140.5, 110.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Algeria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032977139655752497`],
+     FontColor->RGBColor[0.8015799962388009, 0.6640644440265335, 0.]], {140.5, -59.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Kenya\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0341726573155977],
+     FontColor->RGBColor[
+      0.19556481655611135`, 0.4735481467551109, 0.8646777798673336]], {-138.5, -65.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Hungary\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02885672450079776],
+     FontColor->RGBColor[
+      0.7483957441188568, 0.23732085117622864`, 0.3276737598019054]], {-138.5, -128.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Portugal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028921362369099115`],
+     FontColor->RGBColor[0.6436606941348103, 0.252, 0.4982143167156765]], {-0.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ecuador\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02981874300278041],
+     FontColor->RGBColor[0.7536277704643516, 0.6587364189404835, 0.]], {141.5, -72.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Poland\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.032253528194230316`],
+     FontColor->RGBColor[0.46800178488796507`, 0.63, 0.03436136468804449]], {-16.5, -160.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belgium\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029089225692403874`],
+     FontColor->RGBColor[
+      0.706548891814269, 0.2456902216371462, 0.39741851364288505`]], {-144.5, -78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Somalia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02960786481510632],
+     FontColor->RGBColor[
+      0.7742585211652906, 0.2321482957669419, 0.28456913139118245`]], {45.5, 156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sudan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03297692586609679],
+     FontColor->RGBColor[0.6522222356846489, 0.252, 0.4850427143313094]], {153.5, 13.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Taiwan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03056275450463477],
+     FontColor->RGBColor[
+      0.8432259266224432, 0.39112963311221627`, 0.14858036876838052`]], {152.5, 25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Burundi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029125519921074292`],
+     FontColor->RGBColor[
+      0.8346050009402987, 0.34802500470149345`, 0.16840849783731304`]], {-45.5, 158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Rwanda\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029253435550543785`],
+     FontColor->RGBColor[0.6073934221375008, 0.252, 0.5540101197884603]], {149.5, 78.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Senegal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02971038635501447],
+     FontColor->RGBColor[
+      0.8571748773906379, 0.4608743869531896, 0.11562783104527762`]], {-60.5, -159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Angola\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.031653333981975486`],
+     FontColor->RGBColor[
+      0.8292769758542473, 0.3213848792712366, 0.18066295553523118`]], {151.5, -25.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Sweden\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028909619966233712`],
+     FontColor->RGBColor[
+      0.8485539517084946, 0.4177697585424731, 0.13632591107046238`]], {149.5, 90.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Yemen\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03128693900438293],
+     FontColor->RGBColor[
+      0.1524601881453885, 0.5080318494836892, 0.8129522257744661]], {153.5, 36.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Zambia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029908030432744037`],
+     FontColor->RGBColor[
+      0.8206560501721027, 0.2782802508605137, 0.2004910846041637]], {78.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Belarus\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028831292811251866`],
+     FontColor->RGBColor[
+      0.8850727789270298, 0.600363894635149, 0.04030349689701952]], {-152.5, 92.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Ghana\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0314372156579939],
+     FontColor->RGBColor[
+      0.6905648165561062, 0.24888703668877876`, 0.42405863907315633`]], {-69.5, 0.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Tunisia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029116823357982487`],
+     FontColor->RGBColor[
+      0.4617810393216153, 0.3081277270623911, 0.8705474016959619]], {151.5, 47.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Malawi\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029997932839377944`],
+     FontColor->RGBColor[
+      0.8797447538409784, 0.5737237692048922, 0.05468916462935822]], {152.5, -84.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Spain\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03332707740934083],
+     FontColor->RGBColor[0.2197331439342194, 0.63, 0.35033963499281173`]], {152.5, -37.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Guinea\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0292751981082646],
+     FontColor->RGBColor[
+      0.8936937046091744, 0.6434685230458719, 0.01702699755522917]], {-86.5, 159.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Austria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028777915174219244`],
+     FontColor->RGBColor[0.5849790153639175, 0.252, 0.5884938225170501]], {142.5, -113.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Jordan\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02892213762775479],
+     FontColor->RGBColor[0.8312161016036528, 0.6673573446226281, 0.]], {-151.5, 104.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Greece\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02894864031429633],
+     FontColor->RGBColor[0.3616944496683212, 0.3679833301990073, 0.9]], {-146.5, -111.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Bolivia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029099278024169138`],
+     FontColor->RGBColor[0.6280872135505882, 0.6447874681722876, 0.]], {-154.5, 30.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Nepal\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03120388642313842],
+     FontColor->RGBColor[
+      0.8657958030727825, 0.5039790153639124, 0.09235133170348728]], {-155.5, -33.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iran\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0378147524620454],
+     FontColor->RGBColor[
+      0.7841372229535658, 0.23017255540928686`, 0.26810462841072363`]], {-17.5, 22.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Serbia\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02875190538491099],
+     FontColor->RGBColor[
+      0.8259840752581541, 0.30492037629077057`, 0.18823662690624554`]], {-99.5, -156.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Italy\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.0349789513841575],
+     FontColor->RGBColor[
+      0.8378979015363919, 0.3644895076819594, 0.16083482646629865`]], {-153.5, 44.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Niger\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030609737734039504`],
+     FontColor->RGBColor[
+      0.039610805893685895`, 0.5983113552850513, 0.677532967072423]], {157.5, 60.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Benin\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029153529137765775`],
+     FontColor->RGBColor[0.007686409537498939, 0.63, 0.620217296952274]], {-146.5, 116.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Israel\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.028735632183908046`],
+     FontColor->RGBColor[0.431439203509301, 0.32613647789441946`, 0.9]], {158.5, -11.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Peru\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03166605747930939],
+     FontColor->RGBColor[0.06629468548404815, 0.63, 0.545624945747575]], {-158.5, 12.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chad\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029672054737437968`],
+     FontColor->RGBColor[0.4093935089414, 0.63, 0.10895371589276365`]], {-157.5, -46.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Chile\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029996276270828136`],
+     FontColor->RGBColor[0.571126150140184, 0.252, 0.6098059228612556]], {-157.5, 57.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Cuba\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029057530833637685`],
+     FontColor->RGBColor[
+      0.8711238281588338, 0.5306191407941693, 0.07796566397114857]], {-157.5, 69.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Syria\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.02980158162265539],
+     FontColor->RGBColor[0.6660751009083862, 0.252, 0.46373061398709825`]], {140.5, 122.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Iraq\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.03253985424576214],
+     FontColor->RGBColor[
+      0.8518468523045878, 0.4342342615229392, 0.128752239699448]], {-138.5, 127.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Haiti\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.029066679801671727`],
+     FontColor->RGBColor[
+      0.17910031357564535`, 0.48671974913948374`, 0.8449203762907744]], {112.5, -158.5},
+     Center, Automatic], InsetBox[
+    StyleBox["\<\"Mali\"\>",
+     StripOnInput->False,
+     FontSize->Scaled[0.030133013073594624`],
+     FontColor->RGBColor[
+      0.7324116688607027, 0.24051766622785947`, 0.35431388523216223`]], {150.5, -125.5},
+     Center, Automatic]},
+  DefaultBaseStyle->{"Graphics", FontFamily -> "Source Sans Pro"},
+  ImageSize->Full,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic},
+  PlotRange->{{-174., 174.}, {-169., 165.}}]], "Output",
+ CellChangeTimes->{3.869421082739585*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"c3abc312-b466-423e-82cc-45a6d0f817ba"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<word cloud of countries weighted by population data with business \
+plot theme.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"WordCloud", "[", 
+    RowBox[{"data", ",", 
+     RowBox[{"ImageSize", "->", "Full"}], ",", 
+     RowBox[{"PlotTheme", "->", "\"\<Business\>\""}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.869421105479162*^9, 3.869421154364442*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"ae0a04f6-66a4-4508-9077-79369ae9ee51"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\word cloud of countries weighted by population \
+data with business plot theme.svg\"\>"], "Output",
+ CellChangeTimes->{{3.869421145302432*^9, 3.869421162544037*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"3ea9261f-a663-430e-9974-84d308741dfd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<word cloud of countries weighted by population data with web plot \
+theme.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"WordCloud", "[", 
+    RowBox[{"data", ",", 
+     RowBox[{"ImageSize", "->", "Full"}], ",", 
+     RowBox[{"PlotTheme", "->", "\"\<Web\>\""}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.869421105479162*^9, 3.8694211695079556`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"befcab3b-4e5f-401e-8ca9-72400d329f61"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\word cloud of countries weighted by population \
+data with web plot theme.svg\"\>"], "Output",
+ CellChangeTimes->{3.8694211758585434`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"f55608f0-4d06-420a-8a61-6883971b2e6e"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1152., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"990ab811-40bc-49f4-9aeb-7c6c3fbc0c37"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 162, 3, 122, "Title",ExpressionUUID->"f0f68a24-a7fe-4dbf-8c80-6945878854b8"],
+Cell[745, 27, 332, 9, 35, "Input",ExpressionUUID->"bf4c9e01-8f59-4ac4-8b37-a40a639918ee"],
+Cell[CellGroupData[{
+Cell[1102, 40, 143, 2, 35, "Input",ExpressionUUID->"46b492a0-1317-47e5-bb66-58774ce3fbbf"],
+Cell[1248, 44, 24489, 570, 453, "Output",ExpressionUUID->"da9f5d83-9180-43d5-9e6a-5715e01b4c06"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25774, 619, 270, 5, 35, "Input",ExpressionUUID->"c351c57d-39b4-4bcd-9351-3dc4fd71d558"],
+Cell[26047, 626, 24508, 571, 995, "Output",ExpressionUUID->"47e0793a-782b-4397-a2c5-fafdd4d24567"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50592, 1202, 330, 6, 35, "Input",ExpressionUUID->"fd25d0e8-ce39-4b80-98a8-e7d28a8f4d3e"],
+Cell[50925, 1210, 24465, 571, 995, "Output",ExpressionUUID->"9675c9a1-2319-447a-98db-16582e6e0feb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75427, 1786, 324, 6, 35, "Input",ExpressionUUID->"61cf49f5-5730-4c9b-b8ea-99f92afaae69"],
+Cell[75754, 1794, 24468, 566, 995, "Output",ExpressionUUID->"c3abc312-b466-423e-82cc-45a6d0f817ba"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[100259, 2365, 623, 15, 101, "Input",ExpressionUUID->"ae0a04f6-66a4-4508-9077-79369ae9ee51"],
+Cell[100885, 2382, 343, 4, 65, "Output",ExpressionUUID->"3ea9261f-a663-430e-9974-84d308741dfd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[101265, 2391, 612, 14, 107, "Input",ExpressionUUID->"befcab3b-4e5f-401e-8ca9-72400d329f61"],
+Cell[101880, 2407, 316, 4, 65, "Output",ExpressionUUID->"f55608f0-4d06-420a-8a61-6883971b2e6e"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
