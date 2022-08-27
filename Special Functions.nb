@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1920547,      32850]
-NotebookOptionsPosition[   1910420,      32671]
-NotebookOutlinePosition[   1910860,      32688]
-CellTagsIndexPosition[   1910817,      32685]
+NotebookDataLength[   1946092,      33450]
+NotebookOptionsPosition[   1932751,      33219]
+NotebookOutlinePosition[   1933205,      33236]
+CellTagsIndexPosition[   1933162,      33233]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -31864,6 +31864,46 @@ Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[24]=",ExpressionUUID->"87fdf8d9-9d72-4216-a37d-249c1427121c"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Bessel function of the first kind J_n(z) with n=0.5 in \
+the complex plane from -2-2i to 2+2i with colors created with Mathematica \
+13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"BesselJ", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870601091338606*^9, 3.8706011717824078`*^9}, {
+  3.8706025590991025`*^9, 3.8706025761773825`*^9}, {3.870602757606455*^9, 
+  3.8706027581719265`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"198842e3-1604-40a6-8b83-d6140bd6705c"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Bessel function of the first kind \
+J_n(z) with n=0.5 in the complex plane from -2-2i to 2+2i with colors created \
+with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706025789868593`*^9, 3.8706026795329294`*^9, 
+  3.8706027612542067`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"9419dd9a-7dc3-415a-b9d9-e96cd2a8e2c8"]
+}, Open  ]],
+
 Cell[BoxData[
  RowBox[{"Export", "[", 
   RowBox[{
@@ -31888,9 +31928,89 @@ function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",",
         RowBox[{"2", "I"}]}]}], "}"}], ",", 
      RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
      RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.870601091338606*^9, 
-  3.8706011717824078`*^9}},ExpressionUUID->"198842e3-1604-40a6-8b83-\
-d6140bd6705c"],
+ CellChangeTimes->{{3.870601091338606*^9, 3.8706011717824078`*^9}, 
+   3.870602521287331*^9},ExpressionUUID->"fa75f2ec-c6bd-4588-9b16-\
+e9316fe283c8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Hermite polynomial function H_n(x) with n=1 / 2 in the \
+complex plane from -2-2i to 2+2i with colors created with Mathematica 13.1 \
+function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"HermiteH", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870601091338606*^9, 3.8706011717824078`*^9}, 
+   3.870602521287331*^9, {3.8706027930062933`*^9, 3.870602805581633*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"90a40bd1-e7fc-4b23-9c55-132114d80e88"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CreateDirectory", "eexist", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\\
+peter\\\\\\\\\\\\\\\\Documents\\\\\\\\\\\\\\\\GitHub\\\\\\\\\\\\\\\\data-\
+visualization-functions\\\\\\\\\\\\\\\\plot of the Hermite polynomial \
+function H_n(x) with n=1 \\\\\\\\\\\\\\\\\\\\\\\"\\\"}]\\) already exists.\"",
+    2, 28, 9, 19469608215295335971, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.870602866322215*^9},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"3a3d15b5-8240-4353-a0bc-8939a112f9db"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export", "nodir", 
+   "\"Directory \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\peter\\\\\
+\\\\\\\\\\\\Documents\\\\\\\\\\\\\\\\GitHub\\\\\\\\\\\\\\\\data-visualization-\
+functions\\\\\\\\\\\\\\\\plot of the Hermite polynomial function H_n(x) with \
+n=1 \\\\\\\\\\\\\\\\\\\\\\\"\\\"}]\\) does not exist.\"", 2, 28, 10, 
+   19469608215295335971, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.870602866525261*^9},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"ecb37fa3-c216-4c71-ad1e-e6178d825cf4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export", "noopen", 
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\peter\\\\\
+\\\\\\\\\\\\Documents\\\\\\\\\\\\\\\\GitHub\\\\\\\\\\\\\\\\data-visualization-\
+functions\\\\\\\\\\\\\\\\plot of the Hermite polynomial function H_n(x) with \
+n=1 \\\\\\\\\\\\\\\\ 2 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\\\\\\\"\\\"}]\\).\"",
+    2, 28, 11, 19469608215295335971, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8706028667352977`*^9},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"1b37c01f-1069-4777-88d6-37e75169ea00"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.870602866946356*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"c6c8a83f-0371-40d0-ae9d-f6c75cdbe57d"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -31952,16 +32072,444 @@ ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",",
      RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
      RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
-  3.87059945139777*^9, 3.8705994687400208`*^9}},
- CellLabel->"In[14]:=",ExpressionUUID->"415b52c8-4444-4864-83da-c244ed743a77"],
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029958708467`*^9, 
+  3.8706030020352507`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"415b52c8-4444-4864-83da-c244ed743a77"],
 
 Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
 visualization-functions\\\\plot of the complementary error function Erfc(z) \
 in the complex plane from -2-2i to 2+2i with colors created with Mathematica \
 13.1 function ComplexPlot3D.svg\"\>"], "Output",
- CellChangeTimes->{3.870599476854808*^9},
- CellLabel->"Out[14]=",ExpressionUUID->"4c74b1d3-6fab-4507-8abd-a8c650c68b02"]
+ CellChangeTimes->{3.870599476854808*^9, 3.8706030345932274`*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"4b63f1ec-8e3d-4e4f-b7be-e3560e9f51f8"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Bessel function of the second kind Y_n(z) with n=0.5 \
+in the complex plane from -2-2i to 2+2i with colors created with Mathematica \
+13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"BesselY", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"cf99de02-dc23-45d9-9643-05f8f496f894"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Bessel function of the second kind \
+Y_n(z) with n=0.5 in the complex plane from -2-2i to 2+2i with colors created \
+with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706030447417345`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"5ad4e56e-bf20-40a9-974d-1d1b34a9f861"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the modified Bessel function of the first kind I_n(z) with \
+n=0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"BesselI", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.8706030934025307`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"aa7608b5-95b6-4f99-9d1f-e9907c187fbc"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the modified Bessel function of the first \
+kind I_n(z) with n=0.5 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.870603096556941*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"a60c836e-2da6-43c3-937a-57e822ad9b01"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the modified Bessel function of the second kind K_n(z) \
+with n=0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"BesselK", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.8706031186332655`*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"3566b5b3-cb44-4718-824e-9ac47ae39c4e"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the modified Bessel function of the second \
+kind K_n(z) with n=0.5 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706031215754566`*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"b96b579a-49ab-496f-a02e-e7e4f8ec95fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the spherical Bessel function of the second kind y_n(z) \
+with n=0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"SphericalBesselY", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.8706031733579683`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"dbc0853d-f600-4d18-a1ec-0218b64a2656"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the spherical Bessel function of the \
+second kind y_n(z) with n=0.5 in the complex plane from -2-2i to 2+2i with \
+colors created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], \
+"Output",
+ CellChangeTimes->{{3.87060315791934*^9, 3.870603180112898*^9}},
+ CellLabel->"Out[35]=",ExpressionUUID->"147b1105-572c-4001-9818-d4b83fd9a12e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Hankel function of the first kind H_n^(1)(z) with \
+n=-0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"HankelH1", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.8706032216100063`*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"27b55764-2ad8-49ce-801e-9f0df4201525"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Hankel function of the first kind \
+H_n^(1)(z) with n=-0.5 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706032264463634`*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"ed64b057-f9dc-41eb-bf64-9434558f8514"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Hankel function of the second kind H_n^(2)(z) with \
+n=-0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"HankelH2", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.870603255491885*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"7137f076-0f9d-44cf-81b8-843327e950f5"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Hankel function of the second kind \
+H_n^(2)(z) with n=-0.5 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.870603262002345*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"ac5dc31b-a97c-4ba9-a39f-d6c33410abc6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the spherical Hankel function of the first kind h_n^(1)(z) \
+with n=-0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"SphericalHankelH1", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8706032940552588`*^9, 3.870603297669037*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"a26ca02a-0194-4f47-9f4c-f586521528ef"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the spherical Hankel function of the first \
+kind h_n^(1)(z) with n=-0.5 in the complex plane from -2-2i to 2+2i with \
+colors created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], \
+"Output",
+ CellChangeTimes->{3.870603306962356*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"88c9d9e5-44b8-4588-9a69-e7d74e22032a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Airy function Ai(z) in the complex plane from -2-2i to \
+2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"AiryAi", "[", "z", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8706032940552588`*^9, 3.870603297669037*^9}, {
+  3.8706033363277197`*^9, 3.870603366439324*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"88281f0c-1201-4699-9c09-53f499f382ee"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Airy function Ai(z) in the complex \
+plane from -2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706033787232695`*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"2881b129-77cf-4c91-8726-4df06a6d9769"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the derivative of the Airy function Ai'(z) in the complex \
+plane from -2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"AiryAiPrime", "[", "z", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8706032940552588`*^9, 3.870603297669037*^9}, {
+  3.8706033363277197`*^9, 3.8706034056352205`*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"6c8cf584-ab6c-48ee-914d-8ae555b4556d"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the derivative of the Airy function Ai'(z) \
+in the complex plane from -2-2i to 2+2i with colors created with Mathematica \
+13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706034198463535`*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"6b2313e9-f84a-4461-86b7-02d1c945729a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the spherical Hankel function of the second kind \
+h_n^(2)(z) with n=-0.5 in the complex plane from -2-2i to 2+2i with colors \
+created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}],
+    ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"SphericalHankelH2", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 3.8706032804619403`*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"460d9277-7f92-4143-8acb-69eb6dbc1406"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the spherical Hankel function of the \
+second kind h_n^(2)(z) with n=-0.5 in the complex plane from -2-2i to 2+2i \
+with colors created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], \
+"Output",
+ CellChangeTimes->{3.8706032930479374`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"67a0b509-78b6-425c-a18f-d37813fb7e1d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the spherical Bessel function of the first kind j_n(z) \
+with n=0.5 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"SphericalBesselJ", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8705983517326145`*^9, 3.870598363099065*^9}, {
+  3.87059945139777*^9, 3.8705994687400208`*^9}, {3.8706029635489984`*^9, 
+  3.870602988108917*^9}, {3.870603031761425*^9, 3.8706030415654807`*^9}, {
+  3.8706030716915803`*^9, 
+  3.8706031581643853`*^9}},ExpressionUUID->"e1bfe772-9c3d-44c3-8ebb-\
+958b4e10ca2b"],
 
 Cell[BoxData[
  RowBox[{"exponential", " ", "integral", " ", "function", " ", 
@@ -32669,7 +33217,7 @@ z=-4 to 7 created in Mathematica 13.1.svg\"\>"], "Output",
   "Out[143]=",ExpressionUUID->"87b80047-084b-45f4-926e-08c7770ce27f"]
 }, Open  ]]
 },
-WindowSize->{1141.2, 346.8},
+WindowSize->{1141.2, 490.79999999999995`},
 WindowMargins->{{
   Automatic, -14.399999999999864`}, {-195.5999999999999, Automatic}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
@@ -32769,88 +33317,140 @@ Cell[1875411, 31803, 1538, 36, 141, "Input",ExpressionUUID->"03e8082c-996f-4639-
 Cell[1876952, 31841, 868, 16, 46, "Message",ExpressionUUID->"7cb44174-2011-4818-a8ef-a7ab4dfee4d4"],
 Cell[1877823, 31859, 313, 4, 32, "Output",ExpressionUUID->"87fdf8d9-9d72-4216-a37d-249c1427121c"]
 }, Open  ]],
-Cell[1878151, 31866, 986, 26, 124, "Input",ExpressionUUID->"198842e3-1604-40a6-8b83-d6140bd6705c"],
 Cell[CellGroupData[{
-Cell[1879162, 31896, 921, 23, 105, "Input",ExpressionUUID->"91a1aa3c-55bd-4437-995a-f94318c17361"],
-Cell[1880086, 31921, 385, 5, 52, "Output",ExpressionUUID->"8a96e91e-9057-4042-b7c6-7ad4396d1a16"]
+Cell[1878173, 31868, 1114, 27, 124, "Input",ExpressionUUID->"198842e3-1604-40a6-8b83-d6140bd6705c"],
+Cell[1879290, 31897, 466, 6, 52, "Output",ExpressionUUID->"9419dd9a-7dc3-415a-b9d9-e96cd2a8e2c8"]
+}, Open  ]],
+Cell[1879771, 31906, 1009, 26, 124, "Input",ExpressionUUID->"fa75f2ec-c6bd-4588-9b16-e9316fe283c8"],
+Cell[CellGroupData[{
+Cell[1880805, 31936, 1081, 26, 124, "Input",ExpressionUUID->"90a40bd1-e7fc-4b23-9c55-132114d80e88"],
+Cell[1881889, 31964, 596, 12, 28, "Message",ExpressionUUID->"3a3d15b5-8240-4353-a0bc-8939a112f9db"],
+Cell[1882488, 31978, 599, 13, 28, "Message",ExpressionUUID->"ecb37fa3-c216-4c71-ad1e-e6178d825cf4"],
+Cell[1883090, 31993, 702, 14, 46, "Message",ExpressionUUID->"1b37c01f-1069-4777-88d6-37e75169ea00"],
+Cell[1883795, 32009, 155, 2, 32, "Output",ExpressionUUID->"c6c8a83f-0371-40d0-ae9d-f6c75cdbe57d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1880508, 31931, 987, 24, 105, "Input",ExpressionUUID->"415b52c8-4444-4864-83da-c244ed743a77"],
-Cell[1881498, 31957, 398, 5, 52, "Output",ExpressionUUID->"4c74b1d3-6fab-4507-8abd-a8c650c68b02"]
-}, Open  ]],
-Cell[1881911, 31965, 308, 8, 28, "Input",ExpressionUUID->"3788065a-ea13-4653-bf23-3752845d1f14"],
-Cell[CellGroupData[{
-Cell[1882244, 31977, 1080, 26, 124, "Input",ExpressionUUID->"ad65f1cc-0e74-4889-be2a-82314c8d4f4e"],
-Cell[1883327, 32005, 409, 5, 52, "Output",ExpressionUUID->"d614c9fc-fd94-4875-89f2-88985044c5eb"]
+Cell[1883987, 32016, 921, 23, 105, "Input",ExpressionUUID->"91a1aa3c-55bd-4437-995a-f94318c17361"],
+Cell[1884911, 32041, 385, 5, 52, "Output",ExpressionUUID->"8a96e91e-9057-4042-b7c6-7ad4396d1a16"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1883773, 32015, 1092, 25, 124, "Input",ExpressionUUID->"ee91da9e-b10c-48c4-b357-dc5993940301"],
-Cell[1884868, 32042, 449, 6, 52, "Output",ExpressionUUID->"608faa02-4910-4c0b-b931-8e64c69a80e0"]
+Cell[1885333, 32051, 1040, 25, 105, "Input",ExpressionUUID->"415b52c8-4444-4864-83da-c244ed743a77"],
+Cell[1886376, 32078, 422, 5, 52, "Output",ExpressionUUID->"4b63f1ec-8e3d-4e4f-b7be-e3560e9f51f8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1885354, 32053, 1084, 25, 105, "Input",ExpressionUUID->"c4bcdf2f-2c9d-4d64-b7ef-486430117130"],
-Cell[1886441, 32080, 392, 5, 52, "Output",ExpressionUUID->"6cb5bb3f-69e8-45bb-8514-f782200c2d9f"]
+Cell[1886835, 32088, 1160, 27, 124, "Input",ExpressionUUID->"cf99de02-dc23-45d9-9643-05f8f496f894"],
+Cell[1887998, 32117, 416, 5, 52, "Output",ExpressionUUID->"5ad4e56e-bf20-40a9-974d-1d1b34a9f861"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1886870, 32090, 1136, 26, 105, "Input",ExpressionUUID->"f6c7a454-ac9d-4259-8d8a-788c232773d8"],
-Cell[1888009, 32118, 390, 5, 52, "Output",ExpressionUUID->"ae912235-0259-49a7-97b8-fb89bb6780e5"]
+Cell[1888451, 32127, 1221, 28, 124, "Input",ExpressionUUID->"aa7608b5-95b6-4f99-9d1f-e9907c187fbc"],
+Cell[1889675, 32157, 422, 5, 52, "Output",ExpressionUUID->"a60c836e-2da6-43c3-937a-57e822ad9b01"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1888436, 32128, 1135, 26, 105, "Input",ExpressionUUID->"e84a930f-9109-4e6d-9d77-ff221b63a084"],
-Cell[1889574, 32156, 392, 5, 101, "Output",ExpressionUUID->"7c8c9b2d-5da8-4a10-b3a0-7f9bdd2c521a"]
+Cell[1890134, 32167, 1222, 28, 124, "Input",ExpressionUUID->"3566b5b3-cb44-4718-824e-9ac47ae39c4e"],
+Cell[1891359, 32197, 425, 5, 52, "Output",ExpressionUUID->"b96b579a-49ab-496f-a02e-e7e4f8ec95fc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1890003, 32166, 1199, 27, 124, "Input",ExpressionUUID->"aa83a947-a6ed-4508-a185-f428cfc3b191"],
-Cell[1891205, 32195, 427, 5, 52, "Output",ExpressionUUID->"90af826c-43bd-4a48-8127-c873487e2089"]
+Cell[1891821, 32207, 1232, 28, 124, "Input",ExpressionUUID->"dbc0853d-f600-4d18-a1ec-0218b64a2656"],
+Cell[1893056, 32237, 449, 6, 52, "Output",ExpressionUUID->"147b1105-572c-4001-9818-d4b83fd9a12e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1891669, 32205, 1199, 27, 124, "Input",ExpressionUUID->"e909d768-5171-4e87-9928-e6f21637fa61"],
-Cell[1892871, 32234, 427, 5, 52, "Output",ExpressionUUID->"02be6f85-6da6-4bf9-83c8-e9f9f08975de"]
+Cell[1893542, 32248, 1242, 29, 124, "Input",ExpressionUUID->"27b55764-2ad8-49ce-801e-9f0df4201525"],
+Cell[1894787, 32279, 420, 5, 52, "Output",ExpressionUUID->"ed64b057-f9dc-41eb-bf64-9434558f8514"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1893335, 32244, 1137, 26, 105, "Input",ExpressionUUID->"b27cc6a3-10b0-425c-9a9c-60abc829c44b"],
-Cell[1894475, 32272, 394, 5, 52, "Output",ExpressionUUID->"67eac17e-4e1d-46b0-b08d-0510e87f9b8f"]
+Cell[1895244, 32289, 1241, 29, 124, "Input",ExpressionUUID->"7137f076-0f9d-44cf-81b8-843327e950f5"],
+Cell[1896488, 32320, 419, 5, 52, "Output",ExpressionUUID->"ac5dc31b-a97c-4ba9-a39f-d6c33410abc6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1894906, 32282, 1085, 25, 105, "Input",ExpressionUUID->"e04d11a5-6a27-4476-bd67-e399c5b1e17a"],
-Cell[1895994, 32309, 390, 5, 52, "Output",ExpressionUUID->"7128c753-c022-4bed-8481-c5221a54cdd6"]
+Cell[1896944, 32330, 1059, 26, 124, "Input",ExpressionUUID->"a26ca02a-0194-4f47-9f4c-f586521528ef"],
+Cell[1898006, 32358, 430, 6, 52, "Output",ExpressionUUID->"88c9d9e5-44b8-4588-9a69-e7d74e22032a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1896421, 32319, 1131, 26, 105, "Input",ExpressionUUID->"85c2698a-bc57-4de3-86df-669fa682d73c"],
-Cell[1897555, 32347, 394, 5, 52, "Output",ExpressionUUID->"2bf67b84-e1fa-40dd-b615-d232d7e79ca4"]
+Cell[1898473, 32369, 973, 24, 105, "Input",ExpressionUUID->"88281f0c-1201-4699-9c09-53f499f382ee"],
+Cell[1899449, 32395, 383, 5, 52, "Output",ExpressionUUID->"2881b129-77cf-4c91-8726-4df06a6d9769"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1897986, 32357, 1184, 27, 105, "Input",ExpressionUUID->"46467c69-d6ee-4280-aac9-2e7047b9c060"],
-Cell[1899173, 32386, 393, 5, 52, "Output",ExpressionUUID->"e315a65a-99f8-4018-bbdc-b4c840c3bb5a"]
+Cell[1899869, 32405, 999, 24, 124, "Input",ExpressionUUID->"6c8cf584-ab6c-48ee-914d-8ae555b4556d"],
+Cell[1900871, 32431, 402, 5, 52, "Output",ExpressionUUID->"6b2313e9-f84a-4461-86b7-02d1c945729a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1899603, 32396, 1234, 27, 105, "Input",ExpressionUUID->"47a36214-f4cd-40ac-9d91-7cd2bc677ef6"],
-Cell[1900840, 32425, 392, 5, 52, "Output",ExpressionUUID->"4c8da41f-4c43-4487-8ae5-5f9024f86ec6"]
+Cell[1901310, 32441, 1266, 30, 124, "Input",ExpressionUUID->"460d9277-7f92-4143-8acb-69eb6dbc1406"],
+Cell[1902579, 32473, 433, 6, 52, "Output",ExpressionUUID->"67a0b509-78b6-425c-a18f-d37813fb7e1d"]
 }, Open  ]],
-Cell[1901247, 32433, 1052, 26, 105, "Input",ExpressionUUID->"f48229f7-ef19-4916-9702-148b8008a24f"],
+Cell[1903027, 32482, 1212, 29, 124, "Input",ExpressionUUID->"e1bfe772-9c3d-44c3-8ebb-958b4e10ca2b"],
+Cell[1904242, 32513, 308, 8, 28, "Input",ExpressionUUID->"3788065a-ea13-4653-bf23-3752845d1f14"],
 Cell[CellGroupData[{
-Cell[1902324, 32463, 1097, 26, 124, "Input",ExpressionUUID->"3d36e69b-95db-4922-a978-2e28f08e529f"],
-Cell[1903424, 32491, 434, 5, 52, "Output",ExpressionUUID->"60ac5460-2e78-4b5c-8352-5d9517f63400"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1903895, 32501, 1036, 25, 124, "Input",ExpressionUUID->"9ed2ef1e-61af-4405-a121-d01541997a5b"],
-Cell[1904934, 32528, 429, 5, 52, "Output",ExpressionUUID->"cbee6dcc-3bb9-47a7-af25-9b40bc089c97"]
+Cell[1904575, 32525, 1080, 26, 124, "Input",ExpressionUUID->"ad65f1cc-0e74-4889-be2a-82314c8d4f4e"],
+Cell[1905658, 32553, 409, 5, 52, "Output",ExpressionUUID->"d614c9fc-fd94-4875-89f2-88985044c5eb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1905400, 32538, 927, 23, 105, "Input",ExpressionUUID->"ac2dad6d-08ad-4562-b551-81df9bfca5c0"],
-Cell[1906330, 32563, 386, 5, 52, "Output",ExpressionUUID->"f3856b2a-9292-47ba-ad05-411985e2fd8b"]
+Cell[1906104, 32563, 1092, 25, 124, "Input",ExpressionUUID->"ee91da9e-b10c-48c4-b357-dc5993940301"],
+Cell[1907199, 32590, 449, 6, 52, "Output",ExpressionUUID->"608faa02-4910-4c0b-b931-8e64c69a80e0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1906753, 32573, 895, 22, 86, "Input",ExpressionUUID->"1c484b9f-9720-475e-8c5f-86cd0304fb9a"],
-Cell[1907651, 32597, 355, 5, 52, "Output",ExpressionUUID->"e2c2de44-a504-49cc-8249-5beda36e2dac"]
+Cell[1907685, 32601, 1084, 25, 105, "Input",ExpressionUUID->"c4bcdf2f-2c9d-4d64-b7ef-486430117130"],
+Cell[1908772, 32628, 392, 5, 52, "Output",ExpressionUUID->"6cb5bb3f-69e8-45bb-8514-f782200c2d9f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1908043, 32607, 880, 23, 67, "Input",ExpressionUUID->"cce02e43-c0c3-4a35-96ad-ddf1a2ae8e02"],
-Cell[1908926, 32632, 343, 5, 52, "Output",ExpressionUUID->"84ebf504-fdb8-4447-bcbc-51c9c7a84d3c"]
+Cell[1909201, 32638, 1136, 26, 105, "Input",ExpressionUUID->"f6c7a454-ac9d-4259-8d8a-788c232773d8"],
+Cell[1910340, 32666, 390, 5, 52, "Output",ExpressionUUID->"ae912235-0259-49a7-97b8-fb89bb6780e5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1909306, 32642, 759, 19, 48, "Input",ExpressionUUID->"3eb6e21a-c8f3-4fe6-a1d2-5b8c54416fc2"],
-Cell[1910068, 32663, 336, 5, 52, "Output",ExpressionUUID->"87b80047-084b-45f4-926e-08c7770ce27f"]
+Cell[1910767, 32676, 1135, 26, 105, "Input",ExpressionUUID->"e84a930f-9109-4e6d-9d77-ff221b63a084"],
+Cell[1911905, 32704, 392, 5, 101, "Output",ExpressionUUID->"7c8c9b2d-5da8-4a10-b3a0-7f9bdd2c521a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1912334, 32714, 1199, 27, 124, "Input",ExpressionUUID->"aa83a947-a6ed-4508-a185-f428cfc3b191"],
+Cell[1913536, 32743, 427, 5, 52, "Output",ExpressionUUID->"90af826c-43bd-4a48-8127-c873487e2089"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1914000, 32753, 1199, 27, 124, "Input",ExpressionUUID->"e909d768-5171-4e87-9928-e6f21637fa61"],
+Cell[1915202, 32782, 427, 5, 52, "Output",ExpressionUUID->"02be6f85-6da6-4bf9-83c8-e9f9f08975de"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1915666, 32792, 1137, 26, 105, "Input",ExpressionUUID->"b27cc6a3-10b0-425c-9a9c-60abc829c44b"],
+Cell[1916806, 32820, 394, 5, 52, "Output",ExpressionUUID->"67eac17e-4e1d-46b0-b08d-0510e87f9b8f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1917237, 32830, 1085, 25, 105, "Input",ExpressionUUID->"e04d11a5-6a27-4476-bd67-e399c5b1e17a"],
+Cell[1918325, 32857, 390, 5, 52, "Output",ExpressionUUID->"7128c753-c022-4bed-8481-c5221a54cdd6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1918752, 32867, 1131, 26, 105, "Input",ExpressionUUID->"85c2698a-bc57-4de3-86df-669fa682d73c"],
+Cell[1919886, 32895, 394, 5, 52, "Output",ExpressionUUID->"2bf67b84-e1fa-40dd-b615-d232d7e79ca4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1920317, 32905, 1184, 27, 105, "Input",ExpressionUUID->"46467c69-d6ee-4280-aac9-2e7047b9c060"],
+Cell[1921504, 32934, 393, 5, 52, "Output",ExpressionUUID->"e315a65a-99f8-4018-bbdc-b4c840c3bb5a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1921934, 32944, 1234, 27, 105, "Input",ExpressionUUID->"47a36214-f4cd-40ac-9d91-7cd2bc677ef6"],
+Cell[1923171, 32973, 392, 5, 52, "Output",ExpressionUUID->"4c8da41f-4c43-4487-8ae5-5f9024f86ec6"]
+}, Open  ]],
+Cell[1923578, 32981, 1052, 26, 105, "Input",ExpressionUUID->"f48229f7-ef19-4916-9702-148b8008a24f"],
+Cell[CellGroupData[{
+Cell[1924655, 33011, 1097, 26, 124, "Input",ExpressionUUID->"3d36e69b-95db-4922-a978-2e28f08e529f"],
+Cell[1925755, 33039, 434, 5, 52, "Output",ExpressionUUID->"60ac5460-2e78-4b5c-8352-5d9517f63400"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1926226, 33049, 1036, 25, 124, "Input",ExpressionUUID->"9ed2ef1e-61af-4405-a121-d01541997a5b"],
+Cell[1927265, 33076, 429, 5, 52, "Output",ExpressionUUID->"cbee6dcc-3bb9-47a7-af25-9b40bc089c97"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1927731, 33086, 927, 23, 105, "Input",ExpressionUUID->"ac2dad6d-08ad-4562-b551-81df9bfca5c0"],
+Cell[1928661, 33111, 386, 5, 52, "Output",ExpressionUUID->"f3856b2a-9292-47ba-ad05-411985e2fd8b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1929084, 33121, 895, 22, 86, "Input",ExpressionUUID->"1c484b9f-9720-475e-8c5f-86cd0304fb9a"],
+Cell[1929982, 33145, 355, 5, 52, "Output",ExpressionUUID->"e2c2de44-a504-49cc-8249-5beda36e2dac"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1930374, 33155, 880, 23, 67, "Input",ExpressionUUID->"cce02e43-c0c3-4a35-96ad-ddf1a2ae8e02"],
+Cell[1931257, 33180, 343, 5, 52, "Output",ExpressionUUID->"84ebf504-fdb8-4447-bcbc-51c9c7a84d3c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1931637, 33190, 759, 19, 48, "Input",ExpressionUUID->"3eb6e21a-c8f3-4fe6-a1d2-5b8c54416fc2"],
+Cell[1932399, 33211, 336, 5, 52, "Output",ExpressionUUID->"87b80047-084b-45f4-926e-08c7770ce27f"]
 }, Open  ]]
 }
 ]
