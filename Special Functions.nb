@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1963861,      33883]
-NotebookOptionsPosition[   1948142,      33613]
-NotebookOutlinePosition[   1948579,      33630]
-CellTagsIndexPosition[   1948536,      33627]
+NotebookDataLength[   1970527,      34049]
+NotebookOptionsPosition[   1953829,      33761]
+NotebookOutlinePosition[   1954283,      33778]
+CellTagsIndexPosition[   1954240,      33775]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33606,14 +33606,162 @@ ComplexPlot3D.svg\"\>"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell["Struve Functions", "Section",
- CellChangeTimes->{{3.870605275863839*^9, 
-  3.870605277983433*^9}},ExpressionUUID->"709777ce-b5c3-4672-951a-\
-5f02385525d6"]
+Cell[CellGroupData[{
+
+Cell["Struve and Related Functions", "Section",
+ CellChangeTimes->{{3.870605275863839*^9, 3.870605277983433*^9}, {
+  3.8706054039579954`*^9, 
+  3.8706054069016457`*^9}},ExpressionUUID->"709777ce-b5c3-4672-951a-\
+5f02385525d6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Struve function H_n(z) with n=2 in the complex plane \
+from -2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"StruveH", "[", 
+      RowBox[{"2", ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870605339345791*^9, 3.8706053621320114`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"7530143a-506b-4a76-bd35-4a3a58d9c2fa"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Struve function H_n(z) with n=2 in the \
+complex plane from -2-2i to 2+2i with colors created with Mathematica 13.1 \
+function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.870605389166153*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"19c5354d-7328-42b6-afef-b88a09b6e755"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the modified Struve function L_n(z) with n=2 in the \
+complex plane from -2-2i to 2+2i with colors created with Mathematica 13.1 \
+function ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"StruveL", "[", 
+      RowBox[{"2", ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870605339345791*^9, 3.870605381421248*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"316dc4dc-4b87-4edc-873b-7c2bbfaf3717"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the modified Struve function L_n(z) with \
+n=2 in the complex plane from -2-2i to 2+2i with colors created with \
+Mathematica 13.1 function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.8706054173110037`*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"2d4c4813-4856-474f-bf92-1a70ee7dfbc1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Anger function J_v(z) with n=2 in the complex plane \
+from -2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"AngerJ", "[", 
+      RowBox[{"2", ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870605339345791*^9, 3.8706054289859705`*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"ae44f769-c454-43a7-9056-35deeeb1512c"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Anger function J_v(z) with n=2 in the \
+complex plane from -2-2i to 2+2i with colors created with Mathematica 13.1 \
+function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.870605433473678*^9},
+ CellLabel->"Out[59]=",ExpressionUUID->"6a33492b-1b96-483a-b347-e601007f1174"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot of the Weber function E_v(z) with n=2 in the complex plane \
+from -2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"ComplexPlot3D", "[", 
+    RowBox[{
+     RowBox[{"WeberE", "[", 
+      RowBox[{"2", ",", "z"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "-", 
+        RowBox[{"2", "I"}]}], ",", 
+       RowBox[{"2", "+", 
+        RowBox[{"2", "I"}]}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.870605339345791*^9, 3.8706054496819*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"de885a4e-8804-4d2e-9fc9-131c5ef00e9e"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the Weber function E_v(z) with n=2 in the \
+complex plane from -2-2i to 2+2i with colors created with Mathematica 13.1 \
+function ComplexPlot3D.svg\"\>"], "Output",
+ CellChangeTimes->{3.870605485543497*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"41fd6262-b6fa-4fcb-a885-bf76f4be6f98"]
+}, Open  ]]
+}, Open  ]]
 },
-WindowSize->{1152., 585.6},
+WindowSize->{1141.2, 388.79999999999995`},
 WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+  Automatic, -14.399999999999864`}, {-195.5999999999999, Automatic}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"2bee35aa-b0a9-4f25-aade-8264ebe2f4bb"
@@ -33729,7 +33877,7 @@ Cell[1884911, 32041, 385, 5, 52, "Output",ExpressionUUID->"8a96e91e-9057-4042-b7
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1885333, 32051, 1040, 25, 105, "Input",ExpressionUUID->"415b52c8-4444-4864-83da-c244ed743a77"],
-Cell[1886376, 32078, 447, 6, 52, "Output",ExpressionUUID->"6e3b9862-cc9e-4115-ba1f-a3db659a4517"]
+Cell[1886376, 32078, 447, 6, 101, "Output",ExpressionUUID->"6e3b9862-cc9e-4115-ba1f-a3db659a4517"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1886860, 32089, 1160, 27, 124, "Input",ExpressionUUID->"cf99de02-dc23-45d9-9643-05f8f496f894"],
@@ -33797,7 +33945,7 @@ Cell[1913985, 32762, 1080, 26, 124, "Input",ExpressionUUID->"ad65f1cc-0e74-4889-
 Cell[1915068, 32790, 409, 5, 52, "Output",ExpressionUUID->"d614c9fc-fd94-4875-89f2-88985044c5eb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1915514, 32800, 1092, 25, 124, "Input",ExpressionUUID->"ee91da9e-b10c-48c4-b357-dc5993940301"],
+Cell[1915514, 32800, 1092, 25, 105, "Input",ExpressionUUID->"ee91da9e-b10c-48c4-b357-dc5993940301"],
 Cell[1916609, 32827, 449, 6, 52, "Output",ExpressionUUID->"608faa02-4910-4c0b-b931-8e64c69a80e0"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -33840,7 +33988,7 @@ Cell[CellGroupData[{
 Cell[1931344, 33181, 1234, 27, 105, "Input",ExpressionUUID->"47a36214-f4cd-40ac-9d91-7cd2bc677ef6"],
 Cell[1932581, 33210, 392, 5, 52, "Output",ExpressionUUID->"4c8da41f-4c43-4487-8ae5-5f9024f86ec6"]
 }, Open  ]],
-Cell[1932988, 33218, 1052, 26, 124, "Input",ExpressionUUID->"f48229f7-ef19-4916-9702-148b8008a24f"],
+Cell[1932988, 33218, 1052, 26, 105, "Input",ExpressionUUID->"f48229f7-ef19-4916-9702-148b8008a24f"],
 Cell[CellGroupData[{
 Cell[1934065, 33248, 1097, 26, 124, "Input",ExpressionUUID->"3d36e69b-95db-4922-a978-2e28f08e529f"],
 Cell[1935165, 33276, 434, 5, 52, "Output",ExpressionUUID->"60ac5460-2e78-4b5c-8352-5d9517f63400"]
@@ -33884,7 +34032,25 @@ Cell[1946584, 33573, 977, 24, 105, "Input",ExpressionUUID->"be9fed9b-320c-4205-9
 Cell[1947564, 33599, 386, 5, 52, "Output",ExpressionUUID->"04a6ebb8-9ddf-4d0e-85e3-cfcc9aae7334"]
 }, Open  ]]
 }, Open  ]],
-Cell[1947977, 33608, 161, 3, 67, "Section",ExpressionUUID->"709777ce-b5c3-4672-951a-5f02385525d6"]
+Cell[CellGroupData[{
+Cell[1947999, 33610, 226, 4, 67, "Section",ExpressionUUID->"709777ce-b5c3-4672-951a-5f02385525d6"],
+Cell[CellGroupData[{
+Cell[1948250, 33618, 962, 24, 105, "Input",ExpressionUUID->"7530143a-506b-4a76-bd35-4a3a58d9c2fa"],
+Cell[1949215, 33644, 393, 5, 52, "Output",ExpressionUUID->"19c5354d-7328-42b6-afef-b88a09b6e755"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1949645, 33654, 969, 24, 124, "Input",ExpressionUUID->"316dc4dc-4b87-4edc-873b-7c2bbfaf3717"],
+Cell[1950617, 33680, 404, 5, 52, "Output",ExpressionUUID->"2d4c4813-4856-474f-bf92-1a70ee7dfbc1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1951058, 33690, 960, 24, 105, "Input",ExpressionUUID->"ae44f769-c454-43a7-9056-35deeeb1512c"],
+Cell[1952021, 33716, 392, 5, 52, "Output",ExpressionUUID->"6a33492b-1b96-483a-b347-e601007f1174"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1952450, 33726, 956, 24, 105, "Input",ExpressionUUID->"de885a4e-8804-4d2e-9fc9-131c5ef00e9e"],
+Cell[1953409, 33752, 392, 5, 52, "Output",ExpressionUUID->"41fd6262-b6fa-4fcb-a885-bf76f4be6f98"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
