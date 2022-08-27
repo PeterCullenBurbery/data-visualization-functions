@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2300088,      39901]
-NotebookOptionsPosition[   2279065,      39538]
-NotebookOutlinePosition[   2279519,      39555]
-CellTagsIndexPosition[   2279476,      39552]
+NotebookDataLength[   2300744,      39919]
+NotebookOptionsPosition[   2279491,      39552]
+NotebookOutlinePosition[   2279945,      39569]
+CellTagsIndexPosition[   2279902,      39566]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -39492,6 +39492,20 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
+ RowBox[{"Range", "[", 
+  RowBox[{"2", ",", "8", ",", "2"}], "]"}]], "Input",
+ CellLabel->"In[79]:=",ExpressionUUID->"a700b409-cf37-460d-b2e5-bd3992885716"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "4", ",", "6", ",", "8"}], "}"}]], "Output",
+ CellChangeTimes->{3.8706176313306513`*^9},
+ CellLabel->"Out[79]=",ExpressionUUID->"39d4280e-a500-4e57-a29a-146471707915"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
  RowBox[{"Export", "[", 
   RowBox[{
    RowBox[{"FileNameJoin", "[", 
@@ -39898,8 +39912,12 @@ Cell[2276075, 39455, 386, 8, 28, "Input",ExpressionUUID->"e202b0b5-a8ae-4bee-b63
 Cell[2276464, 39465, 709, 23, 54, "Output",ExpressionUUID->"51e3097a-514d-4f3d-977f-1a6e9d3e6e64"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2277210, 39493, 1326, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
-Cell[2278539, 39526, 486, 7, 52, "Output",ExpressionUUID->"b606f2ef-c6e3-4b6a-a302-466508a93150"]
+Cell[2277210, 39493, 170, 3, 28, "Input",ExpressionUUID->"a700b409-cf37-460d-b2e5-bd3992885716"],
+Cell[2277383, 39498, 216, 4, 32, "Output",ExpressionUUID->"39d4280e-a500-4e57-a29a-146471707915"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2277636, 39507, 1326, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
+Cell[2278965, 39540, 486, 7, 52, "Output",ExpressionUUID->"b606f2ef-c6e3-4b6a-a302-466508a93150"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
