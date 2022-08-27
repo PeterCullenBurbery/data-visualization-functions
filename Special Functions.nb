@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2300600,      39914]
-NotebookOptionsPosition[   2279476,      39550]
-NotebookOutlinePosition[   2279930,      39567]
-CellTagsIndexPosition[   2279887,      39564]
+NotebookDataLength[   2300088,      39901]
+NotebookOptionsPosition[   2279065,      39538]
+NotebookOutlinePosition[   2279519,      39555]
+CellTagsIndexPosition[   2279476,      39552]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -39499,9 +39499,9 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
       "\"\<plot of the generalized hypergeometric function pFq(a b z) with \
-a={2,4,6,8} and b={2,3,5,7,11} in the complex plane from -2-2i to 2+2i with \
-colors created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}],
-     "]"}], ",", 
+a={2,4,6,8} and b={2,3,5,7,11} in the complex plane from -2-2i to 2+2i \
+created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}],
+    ",", 
    RowBox[{"ComplexPlot3D", "[", 
     RowBox[{
      RowBox[{"HypergeometricPFQ", "[", 
@@ -39521,29 +39521,17 @@ colors created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}],
      RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.870616429211663*^9, 3.870616480030018*^9}, {
   3.8706165236036844`*^9, 3.8706165662729425`*^9}, {3.8706174313565683`*^9, 
-  3.870617496348362*^9}},
- CellLabel->"In[77]:=",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
+  3.870617496348362*^9}, {3.870617552620615*^9, 3.8706175541330943`*^9}},
+ CellLabel->"In[78]:=",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
 
-Cell[BoxData[
- TemplateBox[{
-  "Export", "noopen", 
-   "\"Cannot open \
-\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\peter\\\\\
-\\\\\\\\\\\\Documents\\\\\\\\\\\\\\\\GitHub\\\\\\\\\\\\\\\\data-visualization-\
-functions\\\\\\\\\\\\\\\\plot of the generalized hypergeometric function \
+Cell[BoxData["\<\"C:\\\\Users\\\\peter\\\\Documents\\\\GitHub\\\\data-\
+visualization-functions\\\\plot of the generalized hypergeometric function \
 pFq(a b z) with a={2,4,6,8} and b={2,3,5,7,11} in the complex plane from \
--2-2i to 2+2i with colors created with Mathematica 13.1 function \
-ComplexPlot3D.svg\\\\\\\"\\\"}]\\).\"", 2, 77, 14, 19469608215295335971, 
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.8706174850965247`*^9, 3.8706175009269733`*^9}},
- CellLabel->
-  "During evaluation of \
-In[77]:=",ExpressionUUID->"60c4f324-495e-492b-983b-448474992eef"],
-
-Cell[BoxData["$Failed"], "Output",
- CellChangeTimes->{{3.870617485529158*^9, 3.870617501343089*^9}},
- CellLabel->"Out[77]=",ExpressionUUID->"48cd5098-3d69-4db0-977d-6c6d11a39dd2"]
+-2-2i to 2+2i created with Mathematica 13.1 function ComplexPlot3D.svg\"\>"], \
+"Output",
+ CellChangeTimes->{{3.870617485529158*^9, 3.870617501343089*^9}, 
+   3.8706175591910467`*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"b606f2ef-c6e3-4b6a-a302-466508a93150"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -39553,7 +39541,7 @@ WindowMargins->{{
   Automatic, -14.399999999999864`}, {-195.5999999999999, Automatic}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Default.nb",
-ExpressionUUID->"2bee35aa-b0a9-4f25-aade-8264ebe2f4bb"
+ExpressionUUID->"06b12c05-ad79-419c-b472-74eb743dcd90"
 ]
 (* End of Notebook Content *)
 
@@ -39910,9 +39898,8 @@ Cell[2276075, 39455, 386, 8, 28, "Input",ExpressionUUID->"e202b0b5-a8ae-4bee-b63
 Cell[2276464, 39465, 709, 23, 54, "Output",ExpressionUUID->"51e3097a-514d-4f3d-977f-1a6e9d3e6e64"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2277210, 39493, 1291, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
-Cell[2278504, 39526, 750, 15, 46, "Message",ExpressionUUID->"60c4f324-495e-492b-983b-448474992eef"],
-Cell[2279257, 39543, 179, 2, 32, "Output",ExpressionUUID->"48cd5098-3d69-4db0-977d-6c6d11a39dd2"]
+Cell[2277210, 39493, 1326, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
+Cell[2278539, 39526, 486, 7, 52, "Output",ExpressionUUID->"b606f2ef-c6e3-4b6a-a302-466508a93150"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
