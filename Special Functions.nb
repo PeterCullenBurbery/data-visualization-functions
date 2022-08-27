@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2290412,      39621]
-NotebookOptionsPosition[   2270908,      39285]
-NotebookOutlinePosition[   2271362,      39302]
-CellTagsIndexPosition[   2271319,      39299]
+NotebookDataLength[   2300600,      39914]
+NotebookOptionsPosition[   2279476,      39550]
+NotebookOutlinePosition[   2279930,      39567]
+CellTagsIndexPosition[   2279887,      39564]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36684,7 +36684,6 @@ L6TiFqn3jtT4SypukRp//dd4Rmq89v8b5/DxndS4RmrcJzXukBqHSo2n/mt8
 KDUOkopXpcbRUuO+/xonS43XpL4DSI1D/2s8LzV+lBp3SMVdUuMRqThKKj6U
 iov+D6xUHpU=
       "], {{{
-         EdgeForm[], 
          Texture[
           GraphicsBox[
            TagBox[
@@ -37521,6 +37520,7 @@ uVXp5ReuXu4c6UVMlq1SBhWZRH69WiqEWSLZ7wFqztZ4
             False], DefaultBaseStyle -> "ImageGraphics", 
            ImageSizeRaw -> {272., 272.}, 
            PlotRange -> {{0, 272.}, {0, 272.}}]], 
+         EdgeForm[None], 
          GraphicsGroup3DBox[
           TagBox[{
             Polygon3DBox[CompressedData["
@@ -37756,8 +37756,8 @@ omwPyAt/0LTsnO6Ge6heLiZuINeRhWulM6MKe1Be1Jt6Wx6VV+XRN8T/wrVW
 jVSr3vC/pn+qD74czvUAugJvCntCXhhC18Jr8tR1eE9R9xBrowt7Ut5Uzsp9
 PTqMPmR7Rl46Hr5LnpLH5XX98+/gcuFvk3/k/f+4OZn/
              "]]}, Annotation[#, "Charting`Private`Tag$5031059#1"]& ]]}, {}, {
-         EdgeForm[], 
          GrayLevel[0.82], 
+         EdgeForm[None], 
          GraphicsGroup3DBox[{
            Polygon3DBox[CompressedData["
 1:eJxNmGeQl9UVxnf53/fVSGaIgoQM6MRkgi1GRJQyiYK6CGIyEUE60lR6MyZi
@@ -38602,19 +38602,22 @@ q/FIv0+N3xrPtP3U+K/tr7YX2h5r/NR4re2xxkv9fjVeajz9ve9Z46fGV22/
 tP3X9kXjr7Z3Wh+1vvqLx9QHjc+/Fy80fmv91PZX+ycaz7V/ovFd+ysanzVe
 aTzT+KDxXOOJ9n80nmv/5/fiu/aP/r/xnv6T9ke0P6X9Ce2vaf/m99ov7a9o
 +6j9Re1P/V57q/0j7a9qf+332nftf2l/QtsT7V9oe6Htl7YH/wVP5lQ1
-       "]], {}}, {
-    DisplayFunction -> Identity, DisplayFunction -> Identity, DisplayFunction -> 
-     Identity, Ticks -> {Automatic, Automatic, Automatic}, FaceGrids -> None, 
-     DisplayFunction -> Identity, Axes -> True, 
-     AxesLabel -> {None, None, None}, 
-     AxesOrigin -> {Automatic, Automatic, Automatic}, 
-     BoxRatios -> {1, 1, 0.4}, DisplayFunction :> Identity, ImageSize -> Full,
-      Lighting -> "Neutral", Method -> {"RotationControl" -> "Globe"}, 
-     PlotRange -> {{-2., 2.}, {-2., 2.}, {0., 3.1200589872342963`}}, 
-     PlotRangePadding -> {
-       Scaled[0.02], 
-       Scaled[0.02], 
-       Scaled[0.02]}, Ticks -> {Automatic, Automatic, Automatic}}], 
+       "]], {}}, Axes -> True, AxesLabel -> {None, None, None}, 
+    AxesOrigin -> {Automatic, Automatic, Automatic}, BoxRatios -> {1, 1, 0.4},
+     DisplayFunction -> Identity, FaceGrids -> None, 
+    ImageSize -> {1010.5999999999999`, 1004.4589966555878`}, Lighting -> 
+    "Neutral", Method -> {"RotationControl" -> "Globe"}, 
+    PlotRange -> {{-2., 2.}, {-2., 2.}, {0., 3.1200589872342963`}}, 
+    PlotRangePadding -> {
+      Scaled[0.02], 
+      Scaled[0.02], 
+      Scaled[0.02]}, SphericalRegion -> True, 
+    Ticks -> {Automatic, Automatic, Automatic}, ViewAngle -> 
+    0.4378228416173921, 
+    ViewPoint -> {1.4607872435945122`, -1.2586218290749378`, 
+     2.780642321537884}, 
+    ViewVertical -> {-0.62254823827387, 0.5363907754393962, 
+     0.5698408787070514}], 
    FormBox[
     FormBox[
      TemplateBox[{
@@ -39248,6 +39251,246 @@ Cell[BoxData[
  CellLabel->"Out[69]=",ExpressionUUID->"b79ba3dd-8e26-4d03-85a4-1dfab9032ddd"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "3", ",", "3"}], "}"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.870617398129816*^9}},
+ CellLabel->"In[70]:=",ExpressionUUID->"299f1548-5cfe-40ee-934e-bee57b0280aa"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["4", 
+   RowBox[{"3", " ", 
+    SuperscriptBox["x", "2"]}]], "+", 
+  FractionBox[
+   RowBox[{"4", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", 
+    RowBox[{"BesselI", "[", 
+     RowBox[{"0", ",", 
+      RowBox[{"2", " ", 
+       SqrtBox["x"]}]}], "]"}]}], 
+   RowBox[{"3", " ", 
+    SuperscriptBox["x", "2"]}]]}]], "Output",
+ CellChangeTimes->{3.870617398484124*^9},
+ CellLabel->"Out[70]=",ExpressionUUID->"3f01b2fb-4bd2-43b0-a346-d01d46add2cc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4"}], "}"}], ",", 
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "3", "]"}], "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.8706174085578575`*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"d8b96b56-f6c9-4e7d-8af8-ae0ab2c7c944"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"8", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"BesselI", "[", 
+       RowBox[{"4", ",", 
+        RowBox[{"2", " ", 
+         SqrtBox["x"]}]}], "]"}]}], "+", 
+     RowBox[{
+      SqrtBox["x"], " ", 
+      RowBox[{"BesselI", "[", 
+       RowBox[{"5", ",", 
+        RowBox[{"2", " ", 
+         SqrtBox["x"]}]}], "]"}]}]}], ")"}]}], 
+  SuperscriptBox["x", "2"]]], "Output",
+ CellChangeTimes->{3.870617408882341*^9},
+ CellLabel->"Out[71]=",ExpressionUUID->"15dcffad-5163-4a46-81d6-2d0b2ab2394f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4"}], "}"}], ",", 
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "4", "]"}], "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.8706174128820515`*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"270b7ba9-4a10-4a26-bb27-34a9d3b78852"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"720", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"HypergeometricPFQ", "[", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "5"}], "}"}], ",", "x"}], "]"}]}], "-", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "2", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "5"}], "}"}], ",", "x"}], "]"}], "-", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "4", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "5"}], "}"}], ",", "x"}], "]"}]}], 
+     ")"}]}], 
+   SuperscriptBox["x", "2"]]}]], "Output",
+ CellChangeTimes->{3.87061741326188*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"e62f00ac-a819-4fa5-93ef-75c85eea7c5a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4"}], "}"}], ",", 
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "5", "]"}], "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.870617418764427*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"b5ad8c03-8d1a-4e12-8307-56a0d0fdce28"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"64800", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"HypergeometricPFQ", "[", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "5", ",", "9"}], "}"}], ",", "x"}], "]"}]}], "-", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "2", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "5", ",", "9"}], "}"}], ",", "x"}], 
+       "]"}], "-", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "4", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "5", ",", "9"}], "}"}], ",", "x"}], 
+       "]"}]}], ")"}]}], 
+   SuperscriptBox["x", "2"]]}]], "Output",
+ CellChangeTimes->{3.870617419148714*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"7fa290dd-7635-40e9-843a-bad1cbfc36e9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "6"}], "}"}], ",", 
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "5", "]"}], "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.870617438121767*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"373eed43-b03c-452a-bf2f-7ce5569fe9a2"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   SuperscriptBox["x", "2"]], 
+  RowBox[{"2160", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"4", " ", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "9"}], "}"}], ",", "x"}], "]"}]}], "+", 
+     RowBox[{"3", " ", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "2", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "9"}], "}"}], ",", "x"}], "]"}]}], "+", 
+     RowBox[{"3", " ", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "4", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "9"}], "}"}], ",", "x"}], "]"}]}], "-", 
+     RowBox[{"5", " ", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "4", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "5", ",", "9"}], "}"}], ",", "x"}], "]"}]}], "-", 
+     RowBox[{"5", " ", 
+      RowBox[{"HypergeometricPFQ", "[", 
+       RowBox[{
+        RowBox[{"{", "6", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "5", ",", "9"}], "}"}], ",", "x"}], "]"}]}]}], 
+    ")"}]}]}]], "Output",
+ CellChangeTimes->{3.870617438576202*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"ad9022c0-98e9-415e-9069-e6a9094ce037"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HypergeometricPFQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "6", ",", "8"}], "}"}], ",", 
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "5", "]"}], "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.870617395490942*^9, 3.8706174425248995`*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"e202b0b5-a8ae-4bee-b637-570b91fa3155"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"103680", " ", 
+    RowBox[{"(", 
+     RowBox[{"35", "+", 
+      RowBox[{"2", " ", "x"}]}], ")"}], " ", 
+    RowBox[{"BesselI", "[", 
+     RowBox[{"10", ",", 
+      RowBox[{"2", " ", 
+       SqrtBox["x"]}]}], "]"}]}], 
+   SuperscriptBox["x", "5"]], "+", 
+  FractionBox[
+   RowBox[{"34560", " ", 
+    RowBox[{"(", 
+     RowBox[{"21", "+", "x"}], ")"}], " ", 
+    RowBox[{"BesselI", "[", 
+     RowBox[{"11", ",", 
+      RowBox[{"2", " ", 
+       SqrtBox["x"]}]}], "]"}]}], 
+   SuperscriptBox["x", 
+    RowBox[{"9", "/", "2"}]]]}]], "Output",
+ CellChangeTimes->{3.87061744283631*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"51e3097a-514d-4f3d-977f-1a6e9d3e6e64"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"Export", "[", 
   RowBox[{
@@ -39255,18 +39498,18 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{
       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
-      "\"\<plot of the generalized hypergeometric function pFq(a; b; z) with \
-a={2,4} and b={ and c=4 in the complex plane from -2-2i to 2+2i with colors \
-created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}],
-    ",", 
+      "\"\<plot of the generalized hypergeometric function pFq(a b z) with \
+a={2,4,6,8} and b={2,3,5,7,11} in the complex plane from -2-2i to 2+2i with \
+colors created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}],
+     "]"}], ",", 
    RowBox[{"ComplexPlot3D", "[", 
     RowBox[{
      RowBox[{"HypergeometricPFQ", "[", 
       RowBox[{
-       RowBox[{"{", 
-        RowBox[{"3", ",", "3"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"3", ",", "3", ",", "3"}], "}"}], ",", "x"}], "]"}], ",", 
+       RowBox[{"Range", "[", 
+        RowBox[{"2", ",", "8", ",", "2"}], "]"}], ",", 
+       RowBox[{"Prime", "[", 
+        RowBox[{"Range", "[", "5", "]"}], "]"}], ",", "x"}], "]"}], ",", 
      RowBox[{"{", 
       RowBox[{"z", ",", 
        RowBox[{
@@ -39277,9 +39520,31 @@ created with Mathematica 13.1 function ComplexPlot3D.svg\>\""}], "}"}], "]"}],
      RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
      RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.870616429211663*^9, 3.870616480030018*^9}, {
-  3.8706165236036844`*^9, 
-  3.8706165662729425`*^9}},ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-\
-90b20f1d35de"]
+  3.8706165236036844`*^9, 3.8706165662729425`*^9}, {3.8706174313565683`*^9, 
+  3.870617496348362*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export", "noopen", 
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\peter\\\\\
+\\\\\\\\\\\\Documents\\\\\\\\\\\\\\\\GitHub\\\\\\\\\\\\\\\\data-visualization-\
+functions\\\\\\\\\\\\\\\\plot of the generalized hypergeometric function \
+pFq(a b z) with a={2,4,6,8} and b={2,3,5,7,11} in the complex plane from \
+-2-2i to 2+2i with colors created with Mathematica 13.1 function \
+ComplexPlot3D.svg\\\\\\\"\\\"}]\\).\"", 2, 77, 14, 19469608215295335971, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8706174850965247`*^9, 3.8706175009269733`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[77]:=",ExpressionUUID->"60c4f324-495e-492b-983b-448474992eef"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{{3.870617485529158*^9, 3.870617501343089*^9}},
+ CellLabel->"Out[77]=",ExpressionUUID->"48cd5098-3d69-4db0-977d-6c6d11a39dd2"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -39610,17 +39875,45 @@ Cell[1963174, 34010, 139266, 2372, 374, "Output",ExpressionUUID->"04141ce2-9415-
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2102477, 36387, 609, 15, 28, "Input",ExpressionUUID->"777cf0ca-9aaf-4e28-b934-22c625cac51c"],
-Cell[2103089, 36404, 164475, 2785, 1024, "Output",ExpressionUUID->"8c8f74e5-c201-445c-98b8-684e30952292"]
+Cell[2103089, 36404, 164577, 2788, 1024, "Output",ExpressionUUID->"8c8f74e5-c201-445c-98b8-684e30952292"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2267601, 39194, 1022, 24, 124, "Input",ExpressionUUID->"815140a3-56fc-4dab-a7a5-1b1dac737e66"],
-Cell[2268626, 39220, 425, 5, 52, "Output",ExpressionUUID->"4eb5b7e8-ddb3-43c2-b07d-83afe6b687a9"]
+Cell[2267703, 39197, 1022, 24, 124, "Input",ExpressionUUID->"815140a3-56fc-4dab-a7a5-1b1dac737e66"],
+Cell[2268728, 39223, 425, 5, 52, "Output",ExpressionUUID->"4eb5b7e8-ddb3-43c2-b07d-83afe6b687a9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2269088, 39230, 290, 7, 28, "Input",ExpressionUUID->"9d197043-35b5-432d-9d4d-6b24febd999d"],
-Cell[2269381, 39239, 296, 8, 53, "Output",ExpressionUUID->"b79ba3dd-8e26-4d03-85a4-1dfab9032ddd"]
+Cell[2269190, 39233, 290, 7, 28, "Input",ExpressionUUID->"9d197043-35b5-432d-9d4d-6b24febd999d"],
+Cell[2269483, 39242, 296, 8, 53, "Output",ExpressionUUID->"b79ba3dd-8e26-4d03-85a4-1dfab9032ddd"]
 }, Open  ]],
-Cell[2269692, 39250, 1188, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"]
+Cell[CellGroupData[{
+Cell[2269816, 39255, 356, 8, 28, "Input",ExpressionUUID->"299f1548-5cfe-40ee-934e-bee57b0280aa"],
+Cell[2270175, 39265, 526, 17, 54, "Output",ExpressionUUID->"3f01b2fb-4bd2-43b0-a346-d01d46add2cc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2270738, 39287, 366, 8, 28, "Input",ExpressionUUID->"d8b96b56-f6c9-4e7d-8af8-ae0ab2c7c944"],
+Cell[2271107, 39297, 561, 18, 54, "Output",ExpressionUUID->"15dcffad-5163-4a46-81d6-2d0b2ab2394f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2271705, 39320, 366, 8, 28, "Input",ExpressionUUID->"270b7ba9-4a10-4a26-bb27-34a9d3b78852"],
+Cell[2272074, 39330, 873, 25, 49, "Output",ExpressionUUID->"e62f00ac-a819-4fa5-93ef-75c85eea7c5a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2272984, 39360, 364, 8, 28, "Input",ExpressionUUID->"b5ad8c03-8d1a-4e12-8307-56a0d0fdce28"],
+Cell[2273351, 39370, 916, 26, 49, "Output",ExpressionUUID->"7fa290dd-7635-40e9-843a-bad1cbfc36e9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2274304, 39401, 374, 8, 28, "Input",ExpressionUUID->"373eed43-b03c-452a-bf2f-7ce5569fe9a2"],
+Cell[2274681, 39411, 1357, 39, 70, "Output",ExpressionUUID->"ad9022c0-98e9-415e-9069-e6a9094ce037"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2276075, 39455, 386, 8, 28, "Input",ExpressionUUID->"e202b0b5-a8ae-4bee-b637-570b91fa3155"],
+Cell[2276464, 39465, 709, 23, 54, "Output",ExpressionUUID->"51e3097a-514d-4f3d-977f-1a6e9d3e6e64"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2277210, 39493, 1291, 31, 124, "Input",ExpressionUUID->"74d30f42-2c1b-4ca9-9bfd-90b20f1d35de"],
+Cell[2278504, 39526, 750, 15, 46, "Message",ExpressionUUID->"60c4f324-495e-492b-983b-448474992eef"],
+Cell[2279257, 39543, 179, 2, 32, "Output",ExpressionUUID->"48cd5098-3d69-4db0-977d-6c6d11a39dd2"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
